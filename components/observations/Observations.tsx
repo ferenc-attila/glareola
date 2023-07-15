@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Text, View } from "react-native";
+import {ScrollView, StyleSheet, Text, View} from "react-native";
 import DropDownPicker from 'react-native-dropdown-picker'
 import BirdingHuExtractor from '../../utils/crawler/birding/birdingHuExtractor'
 
@@ -34,7 +34,7 @@ export default function Observations() {
     }, [value]);
 
     return (
-        <>
+        <View style={styles.container}>
             <View>
                 <DropDownPicker
                     open = {open}
@@ -42,12 +42,23 @@ export default function Observations() {
                     items = {urls}
                     setOpen={setOpen}
                     setValue={setValue}
+                    maxHeight={3000}
                 />
             </View>
-            <View>
+            <ScrollView>
                 <Text>Observations</Text>
                 <Text>{JSON.stringify(data)}</Text>
-            </View>
-        </>
+            </ScrollView>
+        </View>
     );
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#2e3a24',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: 1,
+    },
+});
