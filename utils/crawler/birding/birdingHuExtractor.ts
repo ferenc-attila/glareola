@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { load } from 'cheerio';
 import getBirdingHuData from './birdingDataExtractor'
+import {IBirdingHuData} from "../../../types/types";
 
 export default class BirdingHuExtractor {
 
@@ -29,10 +30,10 @@ export default class BirdingHuExtractor {
 
     async getData() {
         const formDataLinks = await this.getLinks();
-        const birdingData = [{}];
-        formDataLinks.forEach(url => {
-            birdingData.push(getBirdingHuData(url))
-        });
+        const birdingData = [] as IBirdingHuData[];
+        for (const url of formDataLinks) {
+            birdingData.push(await getBirdingHuData(url));
+        }
         return birdingData;
     }
 }
