@@ -18,4 +18,5 @@ web-build/
 
 # IDE related files and folders
 .idea/
+*.iml
 .vscode/

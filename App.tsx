@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Button, StyleSheet, View } from 'react-native';
+import {Button, StatusBar, StyleSheet, View} from 'react-native';
 import Main from "./components/main/Main";
 import About from "./components/about/About";
+import Observations from "./components/observations/Observations";
 
 export default function App() {
 
@@ -15,12 +16,15 @@ export default function App() {
             case ('about'): {
                 return <About></About>
             }
+            case ('observations'): {
+                return <Observations></Observations>
+            }
         }
-
     }
 
     return (
         <>
+            <StatusBar barStyle='dark-content' />
             <View style={styles.buttonContainer}>
                 <Button
                     title={'Home'}
@@ -32,10 +36,10 @@ export default function App() {
                 ></Button>
                 <Button
                     title={'Observations'}
+                    onPress={() => setAppScreen('observations')}
                 ></Button>
                 <Button
                     title={'About'}
-                    color={'#57596b'}
                     onPress={() => setAppScreen('about')}
                 ></Button>
             </View>
