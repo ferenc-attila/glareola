@@ -41,6 +41,9 @@ export default function Observation(observationData: IBirdingHuData) {
                     <Text style={styles.observationBody}>
                         {observationData.individuals}
                     </Text>
+                <Text style={styles.observationBody}>
+                    'Latitude: '{observationData.latitude}
+                    </Text>
                     <Button
                         title={'Show on map'}
                         onPress={() => setModalContent('map')}

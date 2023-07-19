@@ -22,8 +22,9 @@ export default async function getBirdingHuData(url: string): Promise<IBirdingHuD
         observers: (formTable.find('tr').eq(5).find('td').eq(1).text().trim()).split(', '),
         uploader: formTable.find('tr').eq(6).find('td').eq(1).text().trim(),
         notes: formTable.find('tr').eq(7).find('td').eq(1).text().trim(),
-        longitude: parseFloat(<string>formTable.find('tr').eq(8).find('td').eq(1).find('#longitude').val()),
-        latitude: parseFloat(<string>formTable.find('tr').eq(8).find('td').eq(1).find('#latitude').val()),
+        // The coordinates are switched in the html, and there is a typo in the selector of the latitude.
+        latitude: parseFloat(<string>formTable.find('tr').eq(8).find('td').eq(1).find('#longitude').val()),
+        longitude: parseFloat(<string>formTable.find('tr').eq(8).find('td').eq(1).find('#lattitude').val()),
         imageLink: imageBox ? imageBox.attr('href') : undefined,
     };
 }
