@@ -42,7 +42,7 @@ export default function Observation(observationData: IBirdingHuData) {
                         {observationData.individuals}
                     </Text>
                 <Text style={styles.observationBody}>
-                    'Latitude: '{observationData.latitude}
+                    Image: {observationData.imageLink}
                     </Text>
                     <Button
                         title={'Show on map'}

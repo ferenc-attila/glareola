@@ -6,9 +6,9 @@ export default async function getBirdingHuData(url: string): Promise<IBirdingHuD
     const {data} = await axios.get(url);
     const $ = load(data);
     const formTable = $('.formtable');
-    const imageBox = $('.thickbox');
     const species = formTable.find('tr').eq(1).find('td').eq(1).text().trim();
     const location = formTable.find('tr').eq(3).find('td').eq(1).text().trim();
+    const previewImageLink = formTable.find('.thickbox').find('img').attr('src')
 
     return {
         id: parseInt(<string>url.split('/').pop()),
@@ -25,7 +25,7 @@ export default async function getBirdingHuData(url: string): Promise<IBirdingHuD
         // The coordinates are switched in the html, and there is a typo in the selector of the latitude.
         latitude: parseFloat(<string>formTable.find('tr').eq(8).find('td').eq(1).find('#longitude').val()),
         longitude: parseFloat(<string>formTable.find('tr').eq(8).find('td').eq(1).find('#lattitude').val()),
-        imageLink: imageBox ? imageBox.attr('href') : undefined,
+        imageLink: previewImageLink ? previewImageLink.replace('sma/sma_', '') : undefined,
     };
 }
 
