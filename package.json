@@ -19,7 +19,8 @@
     "react-native-dropdown-picker": "^5.4.6",
     "axios": "^1.4.0",
     "cheerio": "^1.0.0-rc.12",
-    "react-native-maps": "^1.7.1"
+    "react-native-maps": "^1.7.1",
+    "react-native-sqlite-storage": "^6.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

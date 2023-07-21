@@ -3,6 +3,7 @@ import {Button, StatusBar, StyleSheet, View} from 'react-native';
 import Main from "./components/main/Main";
 import About from "./components/about/About";
 import Observations from "./components/observations/Observations";
+import {Settings} from "./components/settings/Settings";
 
 export default function App() {
 
@@ -19,24 +20,27 @@ export default function App() {
             case ('observations'): {
                 return <Observations></Observations>
             }
+            case ('settings'): {
+                return <Settings></Settings>
+            }
         }
     }
 
     return (
         <>
-            <StatusBar barStyle='dark-content' />
+            <StatusBar/>
             <View style={styles.buttonContainer}>
                 <Button
                     title={'Home'}
                     onPress={() => setAppScreen('main')}
                 ></Button>
                 <Button
-                    title={'Settings'}
-                    color={'#57596b'}
-                ></Button>
-                <Button
                     title={'Observations'}
                     onPress={() => setAppScreen('observations')}
+                ></Button>
+                <Button
+                    title={'Settings'}
+                    onPress={() => setAppScreen('settings')}
                 ></Button>
                 <Button
                     title={'About'}

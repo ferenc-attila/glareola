@@ -1,6 +1,6 @@
 # Glareola
 
-![ ](./assets/glareola_pratincola.jpg)
+![ ](assets/images/glareola_pratincola.jpg)
 Collared pratincole (Glareola pratincola) by Saswat Mishra
 [CC-BY-SA-4.0](https://commons.wikimedia.org/wiki/Category:CC-BY-SA-4.0)
 
