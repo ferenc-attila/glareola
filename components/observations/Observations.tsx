@@ -1,9 +1,9 @@
-import {useEffect, useState} from "react";
-import {ScrollView, StyleSheet, Text, View} from "react-native";
+import { useEffect, useState } from "react";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 import DropDownPicker from 'react-native-dropdown-picker'
 import BirdingHuExtractor from '../../utils/crawler/birding/birdingHuExtractor'
 import Observation from "./Observation";
-import {IBirdingHuData} from "../../types/types";
+import { IBirdingHuData } from "../../types/types";
 
 export default function Observations() {
     const urls = [
@@ -52,7 +52,7 @@ export default function Observations() {
                 <>
                     {data.map((observation) => {
                         return <Observation
-                            key={observation.id}
+                            key={observation.webId}
                             {...observation}
                         />
                     })

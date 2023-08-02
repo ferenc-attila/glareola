@@ -1,9 +1,10 @@
 import axios from 'axios';
-import {load} from 'cheerio';
-import {IBirdingHuData} from "../../../types/types";
+import { load } from 'cheerio';
+import { IBirdingHuData } from "../../../types/types";
+import { sources } from "../constants";
 
 export default async function getBirdingHuData(url: string): Promise<IBirdingHuData> {
-    const {data} = await axios.get(url);
+    const { data } = await axios.get(url);
     const $ = load(data);
     const formTable = $('.formtable');
     const species = formTable.find('tr').eq(1).find('td').eq(1).text().trim();
@@ -11,7 +12,8 @@ export default async function getBirdingHuData(url: string): Promise<IBirdingHuD
     const previewImageLink = formTable.find('.thickbox').find('img').attr('src')
 
     return {
-        id: parseInt(<string>url.split('/').pop()),
+        source: sources.birdingHu,
+        webId: parseInt(<string>url.split('/').pop()),
         date: formTable.find('tr').eq(0).find('td').eq(1).text().trim(),
         speciesHun: species.split(' - ')[0].trim(),
         speciesSci: species.split(' - ')[1].trim(),

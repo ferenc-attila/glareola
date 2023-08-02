@@ -1,5 +1,6 @@
 export interface IBirdingHuData {
-        id: number;
+        source: string,
+        webId: number;
         date: string,
         speciesHun: string,
         speciesSci: string,

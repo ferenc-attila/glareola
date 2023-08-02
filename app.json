@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "birding-alert",
-    "slug": "birding-alert",
+    "slug": "glareola",
     "version": "1.0.0",
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "light",
@@ -18,12 +18,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/images/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d3975595-4258-4e8d-8cd8-b59c09d0e8dd"
+      }
+    },
+    "owner": "expopuma"
   }
 }

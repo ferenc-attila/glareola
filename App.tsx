@@ -1,11 +1,29 @@
 import React, { useState } from 'react';
-import {Button, StatusBar, StyleSheet, View} from 'react-native';
+import { Button, StatusBar, StyleSheet, View } from 'react-native';
+import 'reflect-metadata';
 import Main from "./components/main/Main";
 import About from "./components/about/About";
 import Observations from "./components/observations/Observations";
-import {Settings} from "./components/settings/Settings";
+import { Settings } from "./components/settings/Settings";
+import { DataSource } from "typeorm";
+import { Observation } from "./db/models/Observation";
+
+const AppDataSource = new DataSource({
+    type: 'react-native',
+    database: 'glareola.db',
+    entities: [Observation],
+    synchronize: true,
+    logging: false,
+    driver: undefined,
+    location: './assets/db/',
+});
 
 export default function App() {
+
+    AppDataSource.initialize()
+        .then(() => {
+            console.log('AppDataSource initialized')})
+        .catch((error) => console.log(error))
 
     const [appScreen, setAppScreen] = useState('main')
 
