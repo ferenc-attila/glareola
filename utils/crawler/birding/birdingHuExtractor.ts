@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { load } from 'cheerio';
 import getBirdingHuData from './birdingDataExtractor'
-import {IBirdingHuData} from "../../../types/types";
+import { IBirdingHuData } from "../../../types/types";
 
 export default class BirdingHuExtractor {
 
@@ -12,8 +12,8 @@ export default class BirdingHuExtractor {
     }
 
     async getLinks() {
-        const { data } = await axios.get(this.url);
-        const $ = load(data);
+        const data = await axios.get(this.url).catch(err => {throw err});
+        const $ = load(data.data);
         const observationsTable = $('#obstable');
         const formDataLinks: string[] = [];
 
@@ -29,11 +29,18 @@ export default class BirdingHuExtractor {
     }
 
     async getData() {
-        const formDataLinks = await this.getLinks();
-        const birdingData = [] as IBirdingHuData[];
-        for (const url of formDataLinks) {
-            birdingData.push(await getBirdingHuData(url));
+        try {
+            const formDataLinks = await this.getLinks();
+            const birdingData = [] as IBirdingHuData[];
+            for (const url of formDataLinks) {
+                birdingData.push(await getBirdingHuData(url));
+            }
+            return birdingData;
+        } catch (err) {
+            return {
+                message: 'Error while extracting data from birding.hu',
+                error: err,
+            };
         }
-        return birdingData;
-    }
-}
+    };
+};
