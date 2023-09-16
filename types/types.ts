@@ -15,3 +15,8 @@ export interface IBirdingHuData {
         latitude: number,
         imageLink?: string,
 }
+
+export interface IErrorMessage {
+        message: string;
+        error?: Error;
+}
