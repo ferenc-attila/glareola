@@ -1,0 +1,452 @@
+id;hu;en;de;sci;kat;stat;population
+0;Sujtásos fütyülőlúd;Fulvous Whistling Duck;Gelbbrust-Pfeifgans;Dendrocygna bicolor;E;X;0
+1;Örvös lúd;Brent Goose;Ringelgans;Branta bernicla;A;R;0
+2;Vörösnyakú lúd;Red-breasted Goose;Rothalsgans;Branta ruficollis;A;G;0
+3;Kanadai lúd;Canada Goose;Kanadagans;Branta canadensis;C1;R;0
+4;Apácalúd;Barnacle Goose;Weißwangengans;Branta leucopsis;A;R;0
+5;Indiai lúd;Bar-headed Goose;Streifengans;Anser indicus;C1;R;0
+6;Sarki lúd;Snow Goose;Schneegans;Anser caerulescens;E;X;0
+7;Nyári lúd;Greylag Goose;Graugans;Anser anser;A;FG;3300-4800
+8;Vetési lúd;Taiga Bean Goose;Waldsaatgans;Anser fabalis;A;G;0
+9;Rövidcsőrű lúd;Pink-footed Goose;Kurzschnabelgans;Anser brachyrhynchus;A;R;0
+10;Tundralúd;Tundra Bean Goose;Tundrasaatgans;Anser serrirostris;A;G;0
+11;Vetési lúd faj;Bean Goose sp.;Saatgans sp.;Anser serrirostris v fabalis;;;
+12;Nagy lilik;Greater White-fronted Goose;Blässgans;Anser albifrons;A;G;0
+13;Kis lilik;Lesser White-fronted Goose;Zwerggans;Anser erythropus;A;R;0
+14;Bütykös hattyú;Mute Swan;Höckerschwan;Cygnus olor;A;FG;300-450
+15;Kis hattyú;Tundra Swan;Zwergschwan;Cygnus columbianus;A;R;0
+16;Énekes hattyú;Whooper Swan;Singschwan;Cygnus cygnus;A;OR;1
+17;Nílusi lúd;Egyptian Goose;Nilgans;Alopochen aegyptiaca;C1;OR;0-1
+18;Bütykös ásólúd;Common Shelduck;Brandgans;Tadorna tadorna;A;OG;15-38
+19;Vörös ásólúd;Ruddy Shelduck;Rostgans;Tadorna ferruginea;A;R;0
+20;Mandarinréce;Mandarin Duck;Mandarinente;Aix galericulata;E;R;0
+21;Cifra réce;Baikal Teal;Gluckente;Sibirionetta formosa;;;
+22;Böjti réce;Garganey;Knäkente;Spatula querquedula;A;FG;500-700
+23;Kékszárnyú réce;Blue-winged Teal;Blauflügelente;Spatula discors;A;X;0
+24;Kanalas réce;Northern Shoveler;Löffelente;Spatula clypeata;A;FG;50-150
+25;Kendermagos réce;Gadwall;Schnatterente;Mareca strepera;A;FG;160-400
+26;Fütyülő réce;Eurasian Wigeon;Pfeifente;Mareca penelope;A;G;0
+27;Álarcos réce;American Wigeon;Kanadapfeifente;Mareca americana;A;X;0
+28;Tőkés réce;Mallard;Stockente;Anas platyrhynchos;A;FG;30000-60000
+29;Nyílfarkú réce;Northern Pintail;Spießente;Anas acuta;A;OG;0-20
+30;Csörgő réce;Eurasian Teal;Krickente;Anas crecca;A;OG;0-15
+31;Zöldszárnyú réce;Green-winged Teal;Carolinakrickente;Anas carolinensis;A;X;0
+32;Márványos réce;Marbled Duck;Marmelente;Marmaronetta angustirostris;B;X;0
+33;Üstökösréce;Red-crested Pochard;Kolbenente;Netta rufina;A;FG;300-500
+34;Barátréce;Common Pochard;Tafelente;Aythya ferina;A;FG;500-1000
+35;Cigányréce;Ferruginous Duck;Moorente;Aythya nyroca;A;FG;800-1500
+36;Örvös réce;Ring-necked Duck;Ringschnabelente;Aythya collaris;A;X;0
+37;Kontyos réce;Tufted Duck;Reiherente;Aythya fuligula;A;FG;0-50
+38;Hegyi réce;Greater Scaup;Bergente;Aythya marila;A;G;0
+39;Búbos réce;Lesser Scaup;Kanadabergente;Aythya affinis;A;X;0
+40;Steller-pehelyréce;Steller's Eider;Scheckente;Polysticta stelleri;A;X;0
+41;Cifra pehelyréce;King Eider;Prachteiderente;Somateria spectabilis;A;X;0
+42;Pehelyréce;Common Eider;Eiderente;Somateria mollissima;A;R;0
+43;Füstös réce;Velvet Scoter;Samtente;Melanitta fusca;A;G;0
+44;Fekete réce;Common Scoter;Trauerente;Melanitta nigra;A;R;0
+45;Jegesréce;Long-tailed Duck;Eisente;Clangula hyemalis;A;R;0
+46;Kerceréce;Common Goldeneye;Schellente;Bucephala clangula;A;G;0
+47;Kis bukó;Smew;Zwergsäger;Mergellus albellus;A;G;0
+48;Csuklyás bukó;Hooded Merganser;Kappensäger;Lophodytes cucullatus;E;X;0
+49;Nagy bukó;Common Merganser;Gänsesäger;Mergus merganser;A;OG;2-10
+50;Örvös bukó;Red-breasted Merganser;Mittelsäger;Mergus serrator;A;G;0
+51;Halcsontfarkú réce;Ruddy Duck;Schwarzkopf-Ruderente;Oxyura jamaicensis;C1;X;0
+52;Kékcsőrű réce;White-headed Duck;Weißkopf-Ruderente;Oxyura leucocephala;A;R;0
+53;Császármadár;Hazel Grouse;Haselhuhn;Tetrastes bonasia;A;OR;20-40
+54;Siketfajd;Western Capercaillie;Auerhuhn;Tetrao urogallus;A;X;0
+55;Nyírfajd;Black Grouse;Birkhuhn;Lyrurus tetrix;B;X;0
+56;Fogoly;Grey Partridge;Rebhuhn;Perdix perdix;A;FG;5790
+57;Fürj;Common Quail;Wachtel;Coturnix coturnix;A;FG;24000-27000
+58;Fácán;Common Pheasant;Jagdfasan;Phasianus colchicus;C1;FG;216000-278000
+59;Lappantyú;European Nightjar;Nachtschwalbe;Caprimulgus europaeus;A;FG;6000-10000
+60;Havasi sarlósfecske;Alpine Swift;Alpensegler;Tachymarptis melba;A;OR;5-7
+61;Sarlósfecske;Common Swift;Mauersegler;Apus apus;A;FG;3000-5000
+62;Halvány sarlósfecske;Pallid Swift;Fahlsegler;Apus pallidus;A;X;0
+63;Túzok;Great Bustard;Großtrappe;Otis tarda;A;FG;1480-1680
+64;Reznek;Little Bustard;Zwergtrappe;Tetrax tetrax;A;X;0
+65;Pettyes kakukk;Great Spotted Cuckoo;Häherkuckuck;Clamator glandarius;A;X;0
+66;Kakukk;Common Cuckoo;Kuckuck;Cuculus canorus;A;FG;66000-70000
+67;Talpastyúk;Pallas's Sandgrouse;Steppenflughuhn;Syrrhaptes paradoxus;B;X;0
+68;Barnahasú pusztaityúk;Chestnut-bellied Sandgrouse;Braunbauch-Flughuhn;Pterocles exustus;B;X;0
+69;Parlagi galamb;Feral Pigeon;Straßentaube;Columba livia f. domestica;C1;FG;318000-426000
+70;Kék galamb;Stock Dove;Hohltaube;Columba oenas;A;FG;10000-14000
+71;Örvös galamb;Common Wood Pigeon;Ringeltaube;Columba palumbus;A;FG;152000-165000
+72;Vadgerle;European Turtle Dove;Turteltaube;Streptopelia turtur;A;FG;80000-120000
+73;Keleti gerle;Oriental Turtle Dove;Orientturteltaube;Streptopelia orientalis;A;X;0
+74;Balkáni gerle;Eurasian Collared Dove;Türkentaube;Streptopelia decaocto;A;FG;272000-314000
+75;Guvat;Water Rail;Wasserralle;Rallus aquaticus;A;FG;5000-7000
+76;Haris;Corn Crake;Wachtelkönig;Crex crex;A;FG;525-1532
+77;Pettyes vízicsibe;Spotted Crake;Tüpfelsumpfhuhn;Porzana porzana;A;FG;650-1300
+78;Vízityúk;Common Moorhen;Teichhuhn;Gallinula chloropus;A;FG;6000-12000
+79;Szárcsa;Eurasian Coot;Blässhuhn;Fulica atra;A;FG;10000-20000
+80;Szürkefejű kékfú;Grey-headed Swamphen;Graukopf-Purpurhuhn;Porphyrio poliocephalus;A;X;0
+81;Törpevízicsibe;Baillon's Crake;Zwergsumpfhuhn;Zapornia pusilla;A;OR;0-15
+82;Kis vízicsibe;Little Crake;Kleinsumpfhuhn;Zapornia parva;A;FG;1000-3000
+83;Kanadai daru;Sandhill Crane;Kanadakranich;Antigone canadensis;A;X;0
+84;Pártás daru;Demoiselle Crane;Jungfernkranich;Grus virgo;A;X;0
+85;Daru;Common Crane;Kranich;Grus grus;A;OG;0-1
+86;Kis vöcsök;Little Grebe;Zwergtaucher;Tachybaptus ruficollis;A;FG;3000-4000
+87;Vörösnyakú vöcsök;Red-necked Grebe;Rothalstaucher;Podiceps grisegena;A;FG;10-20
+88;Búbos vöcsök;Great Crested Grebe;Haubentaucher;Podiceps cristatus;A;FG;2000-3000
+89;Füles vöcsök;Horned Grebe;Ohrentaucher;Podiceps auritus;A;G;0
+90;Feketenyakú vöcsök;Black-necked Grebe;Schwarzhalstaucher;Podiceps nigricollis;A;FG;100-250
+91;Rózsás flamingó;Greater Flamingo;Rosaflamingo;Phoenicopterus roseus;A;X;0
+92;Kis flamingó;Lesser Flamingo;Zwergflamingo;Phoeniconaias minor;E;X;0
+93;Ugartyúk;Eurasian Stone-curlew;Triel;Burhinus oedicnemus;A;FG;32-44
+94;Csigaforgató;Eurasian Oystercatcher;Austernfischer;Haematopus ostralegus;A;G;0
+95;Gólyatöcs;Black-winged Stilt;Stelzenläufer;Himantopus himantopus;A;FG;590-675
+96;Gulipán;Pied Avocet;Säbelschnäbler;Recurvirostra avosetta;A;FG;348-360
+97;Bíbic;Northern Lapwing;Kiebitz;Vanellus vanellus;A;FG;10000-15000
+98;Tüskés bíbic;Spur-winged Lapwing;Spornkiebitz;Vanellus spinosus;A;X;0
+99;Lilebíbic;Sociable Lapwing;Steppenkiebitz;Vanellus gregarius;A;R;0
+100;Fehérfarkú lilebíbic;White-tailed Lapwing;Weißschwanzkiebitz;Vanellus leucurus;A;X;0
+101;Aranylile;European Golden Plover;Goldregenpfeifer;Pluvialis apricaria;A;G;0
+102;Ázsiai pettyeslile;Pacific Golden Plover;Tundra-Goldregenpfeifer;Pluvialis fulva;A;X;0
+103;Amerikai pettyeslile;American Golden Plover;Prärie-Goldregenpfeifer;Pluvialis dominica;A;X;0
+104;Pettyeslile faj;Pluvialis dominica/fulva;Pluvialis dominica/fulva;Pluvialis dominica/fulva;A;;0
+105;Ezüstlile;Grey Plover;Kiebitzregenpfeifer;Pluvialis squatarola;A;G;0
+106;Parti lile;Common Ringed Plover;Sandregenpfeifer;Charadrius hiaticula;A;G;0
+107;Kis lile;Little Ringed Plover;Flussregenpfeifer;Charadrius dubius;A;FG;470-760
+108;Ékfarkú lile;Killdeer;Keilschwanz-Regenpfeifer;Charadrius vociferus;A;X;0
+109;Széki lile;Kentish Plover;Seeregenpfeifer;Charadrius alexandrinus;A;FG;0-4
+110;Sivatagi lile;Greater Sand Plover;Wüstenregenpfeifer;Charadrius leschenaultii;A;X;0
+111;Sztyeppi lile;Caspian Plover;Wermutregenpfeifer;Charadrius asiaticus;A;X;0
+112;Havasi lile;Eurasian Dotterel;Mornellregenpfeifer;Charadrius morinellus;A;G;0
+113;Hosszúfarkú cankó;Upland Sandpiper;Prärieläufer;Bartramia longicauda;A;X;0
+114;Kis póling;Eurasian Whimbrel;Regenbrachvogel;Numenius phaeopus;A;G;0
+115;Vékonycsőrű póling;Slender-billed Curlew;Dünnschnabel-Brachvogel;Numenius tenuirostris;A;X;0
+116;Nagy póling;Eurasian Curlew;Brachvogel;Numenius arquata;A;FG;21-61
+117;Kis goda;Bar-tailed Godwit;Pfuhlschnepfe;Limosa lapponica;A;G;0
+118;Nagy goda;Black-tailed Godwit;Uferschnepfe;Limosa limosa;A;FG;80-320
+119;Kőforgató;Ruddy Turnstone;Steinwälzer;Arenaria interpres;A;G;0
+120;Sarki partfutó;Red Knot;Knutt;Calidris canutus;A;G;0
+121;Pajzsoscankó;Ruff;Kampfläufer;Calidris pugnax;A;G;0
+122;Sárjáró;Broad-billed Sandpiper;Sumpfläufer;Calidris falcinellus;A;G;0
+123;Hegyesfarkú partfutó;Sharp-tailed Sandpiper;Spitzschwanz-Strandläufer;Calidris acuminata;A;X;0
+124;Töcspartfutó;Stilt Sandpiper;Bindenstrandläufer;Calidris himantopus;A;X;0
+125;Sarlós partfutó;Curlew Sandpiper;Sichelstrandläufer;Calidris ferruginea;A;G;0
+126;Temminck-partfutó;Temminck's Stint;Temminckstrandläufer;Calidris temminckii;A;G;0
+127;Fenyérfutó;Sanderling;Sanderling;Calidris alba;A;G;0
+128;Havasi partfutó;Dunlin;Alpenstrandläufer;Calidris alpina;A;G;0
+129;Tengeri partfutó;Purple Sandpiper;Meerstrandläufer;Calidris maritima;A;X;0
+130;Baird-partfutó;Baird's Sandpiper;Bairdstrandläufer;Calidris bairdii;A;X;0
+131;Apró partfutó;Little Stint;Zwergstrandläufer;Calidris minuta;A;G;0
+132;Bonaparte-partfutó;White-rumped Sandpiper;Weißbürzel-Strandläufer;Calidris fuscicollis;A;X;0
+133;Cankópartfutó;Buff-breasted Sandpiper;Grasläufer;Calidris subruficollis;A;R;0
+134;Vándorpartfutó;Pectoral Sandpiper;Graubrust-Strandläufer;Calidris melanotos;A;R;0
+135;Kis partfutó;Semipalmated Sandpiper;Sandstrandläufer;Calidris pusilla;A;X;0
+136;Hosszúcsőrű cankógoda;Long-billed Dowitcher;Tundraschlammläufer;Limnodromus scolopaceus;A;X;0
+137;Erdei szalonka;Eurasian Woodcock;Waldschnepfe;Scolopax rusticola;A;FG;50-100
+138;Kis sárszalonka;Jack Snipe;Zwergschnepfe;Lymnocryptes minimus;A;G;0
+139;Nagy sárszalonka;Great Snipe;Doppelschnepfe;Gallinago media;A;G;0
+140;Sárszalonka;Common Snipe;Bekassine;Gallinago gallinago;A;FG;300-500
+141;Terekcankó;Terek Sandpiper;Terekwasserläufer;Xenus cinereus;A;R;0
+142;Wilson-víztaposó;Wilson's Phalarope;Wilsonwassertreter;Phalaropus tricolor;A;X;0
+143;Vékonycsőrű víztaposó;Red-necked Phalarope;Odinshühnchen;Phalaropus lobatus;A;G;0
+144;Laposcsőrű víztaposó;Red Phalarope;Thorshühnchen;Phalaropus fulicarius;A;R;0
+145;Billegetőcankó;Common Sandpiper;Flussuferläufer;Actitis hypoleucos;A;FG;80-120
+146;Erdei cankó;Green Sandpiper;Waldwasserläufer;Tringa ochropus;A;G;0
+147;Sárgalábú cankó;Lesser Yellowlegs;Gelbschenkel;Tringa flavipes;A;X;0
+148;Piroslábú cankó;Common Redshank;Rotschenkel;Tringa totanus;A;FG;480-850
+149;Tavi cankó;Marsh Sandpiper;Teichwasserläufer;Tringa stagnatilis;A;G;0
+150;Réti cankó;Wood Sandpiper;Bruchwasserläufer;Tringa glareola;A;G;0
+151;Füstös cankó;Spotted Redshank;Dunkler Wasserläufer;Tringa erythropus;A;G;0
+152;Szürke cankó;Common Greenshank;Grünschenkel;Tringa nebularia;A;G;0
+153;Székicsér;Collared Pratincole;Rotflügel-Brachschwalbe;Glareola pratincola;A;FG;30-53
+154;Feketeszárnyú székicsér;Black-winged Pratincole;Schwarzflügel-Brachschwalbe;Glareola nordmanni;A;R;0
+155;Csüllő;Black-legged Kittiwake;Dreizehenmöwe;Rissa tridactyla;A;R;0
+156;Fecskesirály;Sabine's Gull;Schwalbenmöwe;Xema sabini;A;X;0
+157;Vékonycsőrű sirály;Slender-billed Gull;Dünnschnabelmöwe;Chroicocephalus genei;A;R;0
+158;Bonaparte-sirály;Bonaparte's Gull;Bonapartemöwe;Chroicocephalus philadelphia;A;X;0
+159;Dankasirály;Black-headed Gull;Lachmöwe;Chroicocephalus ridibundus;A;FG;4000-6400
+160;Kis sirály;Little Gull;Zwergmöwe;Hydrocoloeus minutus;A;G;0
+161;Prérisirály;Franklin's Gull;Präriemöwe;Leucophaeus pipixcan;A;X;0
+162;Korallsirály;Audouin's Gull;Korallenmöwe;Ichthyaetus audouinii;A;X;0
+163;Szerecsensirály;Mediterranean Gull;Schwarzkopfmöwe;Ichthyaetus melanocephalus;A;FG;765-887
+164;Halászsirály;Pallas's Gull;Fischmöwe;Ichthyaetus ichthyaetus;A;R;0
+165;Viharsirály;Mew Gull;Sturmmöwe;Larus canus;A;OG;0-1
+166;Gyűrűscsőrű sirály;Ring-billed Gull;Ringschnabelmöwe;Larus delawarensis;A;X;0
+167;Dolmányos sirály;Great Black-backed Gull;Mantelmöwe;Larus marinus;A;R;0
+168;Jeges sirály;Glaucous Gull;Eismöwe;Larus hyperboreus;A;X;0
+169;Sarki sirály;Iceland Gull;Polarmöwe;Larus glaucoides;A;X;0
+170;Ezüstsirály;European Herring Gull;Silbermöwe;Larus argentatus;A;R;0
+171;Sztyeppi sirály;Caspian Gull;Steppenmöwe;Larus cachinnans;A;OG;105-159
+172;Sárgalábú sirály;Yellow-legged Gull;Mittelmeermöwe;Larus michahellis;A;OG;0-8
+173;Örmény sirály;Armenian Gull;Armenienmöwe;Larus armenicus;A;X;0
+174;Heringsirály;Lesser Black-backed Gull;Heringsmöwe;Larus fuscus;A;G;0
+175;Világoshátú heringsirály;Lesser Black-backed Gull ssp. graellsii/intermedius;Heringsmöwe ssp.;Larus fuscus graellsii/intermedius;A;R;0
+176;Szibériai heringsirály;Heuglin's Gull;Tundramöve;Larus fuscus heuglini;A;R;0
+177;Kacagócsér;Gull-billed Tern;Lachseeschwalbe;Gelochelidon nilotica;A;G;0
+178;Lócsér;Caspian Tern;Raubseeschwalbe;Hydroprogne caspia;A;G;0
+179;Kenti csér;Sandwich Tern;Brandseeschwalbe;Thalasseus sandvicensis;A;R;0
+180;Kis csér;Little Tern;Zwergseeschwalbe;Sternula albifrons;A;G;0
+181;Küszvágó csér;Common Tern;Flussseeschwalbe;Sterna hirundo;A;FG;565-862
+182;Sarki csér;Arctic Tern;Küstenseeschwalbe;Sterna paradisaea;A;R;0
+183;Fattyúszerkő;Whiskered Tern;Weißbart-Seeschwalbe;Chlidonias hybrida;A;FG;1106-1568
+184;Fehérszárnyú szerkő;White-winged Tern;Weißflügel-Seeschwalbe;Chlidonias leucopterus;A;FG;0-124
+185;Kormos szerkő;Black Tern;Trauerseeschwalbe;Chlidonias niger;A;FG;25-38
+186;Nagy halfarkas;Great Skua;Skua;Stercorarius skua;A;R;0
+187;Szélesfarkú halfarkas;Pomarine Skua;Spatelraubmöwe;Stercorarius pomarinus;A;R;0
+188;Ékfarkú halfarkas;Arctic Skua;Schmarotzerraubmöwe;Stercorarius parasiticus;A;R;0
+189;Nyílfarkú halfarkas;Long-tailed Skua;Falkenraubmöwe;Stercorarius longicaudus;A;R;0
+190;Halfarkas faj;Skua sp.;Raubmöwe sp.;Stercorarius sp.;A;R;0
+191;Alka;Razorbill;Tordalk;Alca torda;B;X;0
+192;Lunda;Atlantic Puffin;Papageitaucher;Fratercula arctica;B;X;0
+193;Északi búvár;Red-throated Diver;Sterntaucher;Gavia stellata;A;G;0
+194;Sarki búvár;Black-throated Diver;Prachttaucher;Gavia arctica;A;G;0
+195;Jeges búvár;Great Northern Diver;Eistaucher;Gavia immer;A;R;0
+196;Fehércsőrű búvár;White-billed Diver;Gelbschnabeltaucher;Gavia adamsii;A;X;0
+197;Fekete gólya;Black Stork;Schwarzstorch;Ciconia nigra;A;FG;350-400
+198;Fehér gólya;White Stork;Weißstorch;Ciconia ciconia;A;FG;4400-5050
+199;Afrikai marabu;Marabou Stork;Marabu;Leptoptilos crumenifer;E;X;0
+200;Kis kárókatona;Pygmy Cormorant;Zwergscharbe;Microcarbo pygmaeus;A;FG;1100-1233
+201;Nagy kárókatona;Great Cormorant;Kormoran;Phalacrocorax carbo;A;FG;2390-2721
+202;Batla;Glossy Ibis;Sichler;Plegadis falcinellus;A;OG;0-12
+203;Kanalasgém;Eurasian Spoonbill;Löffler;Platalea leucorodia;A;FG;612-1100
+204;Afrikai kanalasgém;African Spoonbill;Rotgesichtlöffler;Platalea alba;E;X;0
+205;Bölömbika;Eurasian Bittern;Rohrdommel;Botaurus stellaris;A;FG;800-1740
+206;Törpegém;Little Bittern;Zwergdommel;Ixobrychus minutus;A;FG;2500-3500
+207;Bakcsó;Black-crowned Night Heron;Nachtreiher;Nycticorax nycticorax;A;FG;2243-2576
+208;Üstökösgém;Squacco Heron;Rallenreiher;Ardeola ralloides;A;FG;244-286
+209;Kínai üstökösgém;Chinese Pond Heron;Bacchusreiher;Ardeola bacchus;A;X;0
+210;Pásztorgém;Western Cattle Egret;Kuhreiher;Bubulcus ibis;A;OR;15-30
+211;Szürke gém;Grey Heron;Graureiher;Ardea cinerea;A;FG;2970-3343
+212;Vörös gém;Purple Heron;Purpurreiher;Ardea purpurea;A;FG;633-802
+213;Nagy kócsag;Great Egret;Silberreiher;Ardea alba;A;FG;4173-4666
+214;Kis kócsag;Little Egret;Seidenreiher;Egretta garzetta;A;FG;578-768
+215;Zátonykócsag;Western Reef Heron;Küstenreiher;Egretta gularis;A;X;0
+216;Rózsás gödény;Great White Pelican;Rosapelikan;Pelecanus onocrotalus;A;R;0
+217;Vörhenyes gödény;Pink-backed Pelican;Rötelpelikan;Pelecanus rufescens;E;X;0
+218;Borzas gödény;Dalmatian Pelican;Krauskopfpelikan;Pelecanus crispus;A;R;0
+219;Gödény faj;Pelican sp.;Pelikan sp.;Pelecanus sp.;;R;
+220;Halászsas;Western Osprey;Fischadler;Pandion haliaetus;A;G;0
+221;Kuhi;Black-winged Kite;Gleitaar;Elanus caeruleus;A;X;0
+222;Dögkeselyű;Egyptian Vulture;Schmutzgeier;Neophron percnopterus;A;X;0
+223;Darázsölyv;European Honey Buzzard;Wespenbussard;Pernis apivorus;A;FG;800-1000
+224;Fakó keselyű;Griffon Vulture;Gänsegeier;Gyps fulvus;A;R;0
+225;Barátkeselyű;Cinereous Vulture;Mönchsgeier;Aegypius monachus;A;X;0
+226;Kígyászölyv;Short-toed Snake Eagle;Schlangenadler;Circaetus gallicus;A;FG;41-45
+227;Békászó sas;Lesser Spotted Eagle;Schreiadler;Clanga pomarina;A;FG;29-36
+228;Fekete sas;Greater Spotted Eagle;Schelladler;Clanga clanga;A;R;0
+229;Törpesas;Booted Eagle;Zwergadler;Hieraaetus pennatus;A;OR;0-1
+230;Pusztai sas;Steppe Eagle;Steppenadler;Aquila nipalensis;A;R;0
+231;Parlagi sas;Eastern Imperial Eagle;Kaiseradler;Aquila heliaca;A;FG;155-222
+232;Szirti sas;Golden Eagle;Steinadler;Aquila chrysaetos;A;OG;3
+233;Héjasas;Bonelli's Eagle;Habichtsadler;Aquila fasciata;B;X;0
+234;Kis héja;Levant Sparrowhawk;Kurzfangsperber;Accipiter brevipes;A;OR;0
+235;Karvaly;Eurasian Sparrowhawk;Sperber;Accipiter nisus;A;FG;3000-4800
+236;Héja;Northern Goshawk;Habicht;Accipiter gentilis;A;FG;1200-1600
+237;Barna rétihéja;Western Marsh Harrier;Rohrweihe;Circus aeruginosus;A;FG;9000
+238;Kékes rétihéja;Hen Harrier;Kornweihe;Circus cyaneus;A;G;0
+239;Fakó rétihéja;Pallid Harrier;Steppenweihe;Circus macrourus;A;R;0
+240;Hamvas rétihéja;Montagu's Harrier;Wiesenweihe;Circus pygargus;A;FG;49-60
+241;Vörös kánya;Red Kite;Rotmilan;Milvus milvus;A;OG;9-12
+242;Barna kánya;Black Kite;Schwarzmilan;Milvus migrans;A;FG;121-169
+243;Rétisas;White-tailed Eagle;Seeadler;Haliaeetus albicilla;A;FG;311-336
+244;Gatyás ölyv;Rough-legged Buzzard;Raufußbussard;Buteo lagopus;A;G;0
+245;Pusztai ölyv;Long-legged Buzzard;Adlerbussard;Buteo rufinus;A;OG;7-12
+246;Egerészölyv;Common Buzzard;Mäusebussard;Buteo buteo;A;FG;18000-24000
+247;Vörösfarkú egerészölyv;Steppe Buzzard;Falkenbussard;Buteo buteo vulpinus;A;R;0
+248;Gyöngybagoly;Western Barn Owl;Schleiereule;Tyto alba;A;FG;346-860
+249;Gatyáskuvik;Boreal Owl;Raufußkauz;Aegolius funereus;A;R;0
+250;Kuvik;Little Owl;Steinkauz;Athene noctua;A;FG;3000-4000
+251;Karvalybagoly;Northern Hawk-Owl;Sperbereule;Surnia ulula;A;X;0
+252;Törpekuvik;Eurasian Pygmy Owl;Sperlingskauz;Glaucidium passerinum;A;R;3-10
+253;Füleskuvik;Eurasian Scops Owl;Zwergohreule;Otus scops;A;FG;800-2400
+254;Erdei fülesbagoly;Long-eared Owl;Waldohreule;Asio otus;A;FG;6000-8000
+255;Réti fülesbagoly;Short-eared Owl;Sumpfohreule;Asio flammeus;A;FG;7-41
+256;Hóbagoly;Snowy Owl;Schneeeule;Bubo scandiacus;A;X;0
+257;Uhu;Eurasian Eagle-Owl;Uhu;Bubo bubo;A;FG;76-86
+258;Macskabagoly;Tawny Owl;Waldkauz;Strix aluco;A;FG;5000-8000
+259;Uráli bagoly;Ural Owl;Habichtskauz;Strix uralensis;A;FG;120-280
+260;Búbosbanka;Eurasian Hoopoe;Wiedehopf;Upupa epops;A;FG;9200-11500
+261;Szalakóta;European Roller;Blauracke;Coracias garrulus;A;FG;1800
+262;Jégmadár;Common Kingfisher;Eisvogel;Alcedo atthis;A;FG;1200-2000
+263;Zöld gyurgyalag;Blue-cheeked Bee-eater;Blauwangenspint;Merops persicus;A;X;0
+264;Gyurgyalag;European Bee-eater;Bienenfresser;Merops apiaster;A;FG;20000-30000
+265;Nyaktekercs;Eurasian Wryneck;Wendehals;Jynx torquilla;A;FG;18200-25000
+266;Közép fakopáncs;Middle Spotted Woodpecker;Mittelspecht;Dendrocoptes medius;A;FG;16000-22500
+267;Kis fakopáncs;Lesser Spotted Woodpecker;Kleinspecht;Dryobates minor;A;FG;12000-29000
+268;Balkáni fakopáncs;Syrian Woodpecker;Blutspecht;Dendrocopos syriacus;A;FG;21000-37000
+269;Nagy fakopáncs;Great Spotted Woodpecker;Buntspecht;Dendrocopos major;A;FG;252000-297000
+270;Fehérhátú fakopáncs;White-backed Woodpecker;Weißrückenspecht;Dendrocopos leucotos;A;FG;260-760
+271;Fekete harkály;Black Woodpecker;Schwarzspecht;Dryocopus martius;A;FG;8800-10300
+272;Zöld küllő;European Green Woodpecker;Grünspecht;Picus viridis;A;FG;22000-30000
+273;Hamvas küllő;Grey-headed Woodpecker;Grauspecht;Picus canus;A;FG;2000-6000
+274;Fehérkarmú vércse;Lesser Kestrel;Rötelfalke;Falco naumanni;A;X;0
+275;Vörös vércse;Common Kestrel;Turmfalke;Falco tinnunculus;A;FG;7000-10000
+276;Kék vércse;Red-footed Falcon;Rotfußfalke;Falco vespertinus;A;FG;950-1350
+277;Amuri vércse;Amur Falcon;Amurfalke;Falco amurensis;A;X;0
+278;Eleonóra-sólyom;Eleonora's Falcon;Eleonorenfalke;Falco eleonorae;A;X;0
+279;Kis sólyom;Merlin;Merlin;Falco columbarius;A;G;0
+280;Kabasólyom;Eurasian Hobby;Baumfalke;Falco subbuteo;A;FG;1600-2500
+281;Kerecsensólyom;Saker Falcon;Würgfalke;Falco cherrug;A;FG;145-175
+282;Vándorsólyom;Peregrine Falcon;Wanderfalke;Falco peregrinus;A;FG;58-63
+283;Tövisszúró gébics;Red-backed Shrike;Neuntöter;Lanius collurio;A;FG;150000-170000
+284;Kis őrgébics;Lesser Grey Shrike;Schwarzstirnwürger;Lanius minor;A;FG;3000-4000
+285;Nagy őrgébics;Great Grey Shrike;Raubwürger;Lanius excubitor;A;FG;80-125
+286;Vörösfejű gébics;Woodchat Shrike;Rotkopfwürger;Lanius senator;A;R;0
+287;Sárgarigó;Eurasian Golden Oriole;Pirol;Oriolus oriolus;A;FG;152000-156000
+288;Szajkó;Eurasian Jay;Eichelhäher;Garrulus glandarius;A;FG;66000-80000
+289;Szarka;Eurasian Magpie;Elster;Pica pica;A;FG;91000-103000
+290;Fenyőszajkó;Spotted Nutcracker;Tannenhäher;Nucifraga caryocatactes;A;G;0
+291;Havasi varjú;Red-billed Chough;Alpenkrähe;Pyrrhocorax pyrrhocorax;B;X;0
+292;Havasi csóka;Alpine Chough;Alpendohle;Pyrrhocorax graculus;A;X;0
+293;Csóka;Western Jackdaw;Dohle;Coloeus monedula;A;FG;2800-5500
+294;Vetési varjú;Rook;Saatkrähe;Corvus frugilegus;A;FG;31815
+295;Kormos varjú;Carrion Crow;Rabenkrähe;Corvus corone;A;OG;20-50
+296;Dolmányos varjú;Hooded Crow;Nebelkrähe;Corvus cornix;A;FG;57000-58000
+297;Holló;Northern Raven;Kolkrabe;Corvus corax;A;FG;4000-6000
+298;Csonttollú;Bohemian Waxwing;Seidenschwanz;Bombycilla garrulus;A;G;0
+299;Fenyvescinege;Coal Tit;Tannenmeise;Periparus ater;A;FG;16000-30000
+300;Búbos cinege;European Crested Tit;Haubenmeise;Lophophanes cristatus;A;FG;1500-2000
+301;Barátcinege;Marsh Tit;Sumpfmeise;Poecile palustris;A;FG;105000-160000
+302;Kormosfejű cinege;Willow Tit;Weidenmeise;Poecile montanus;A;FG;1000-1500
+303;Kék cinege;Eurasian Blue Tit;Blaumeise;Cyanistes caeruleus;A;FG;207000-219000
+304;Lazúrcinege;Azure Tit;Lasurmeise;Cyanistes cyanus;A;X;0
+305;Széncinege;Great Tit;Kohlmeise;Parus major;A;FG;1130000-1158000
+306;Függőcinege;Eurasian Penduline Tit;Beutelmeise;Remiz pendulinus;A;FG;3000-5000
+307;Barkóscinege;Bearded Reedling;Bartmeise;Panurus biarmicus;A;FG;4500-6800
+308;Erdei pacsirta;Woodlark;Heidelerche;Lullula arborea;A;FG;8000-15000
+309;Mezei pacsirta;Eurasian Skylark;Feldlerche;Alauda arvensis;A;FG;1180000-1266000
+310;Búbospacsirta;Crested Lark;Haubenlerche;Galerida cristata;A;FG;47000-58000
+311;Havasi fülespacsirta;Horned Lark;Ohrenlerche;Eremophila alpestris;A;R;0
+312;Szikipacsirta;Greater Short-toed Lark;Kurzzehenlerche;Calandrella brachydactyla;A;OR;1-3
+313;Kalandrapacsirta;Calandra Lark;Kalanderlerche;Melanocorypha calandra;A;R;0
+314;Partifecske;Sand Martin;Uferschwalbe;Riparia riparia;A;FG;15000-50000
+315;Füsti fecske;Barn Swallow;Rauchschwalbe;Hirundo rustica;A;FG;97000-116000
+316;Szirtifecske;Eurasian Crag Martin;Felsenschwalbe;Ptyonoprogne rupestris;A;X;0
+317;Molnárfecske;Common House Martin;Mehlschwalbe;Delichon urbicum;A;FG;35000-49000
+318;Vörhenyes fecske;Red-rumped Swallow;Rötelschwalbe;Cecropis daurica;A;OR;0-1
+319;Berki poszáta;Cetti's Warbler;Seidensänger;Cettia cetti;A;R;0
+320;Őszapó;Long-tailed Tit;Schwanzmeise;Aegithalos caudatus;A;FG;162000-216000
+321;Sisegő füzike;Wood Warbler;Waldlaubsänger;Phylloscopus sibilatrix;A;FG;54000-58000
+322;Bonelli-füzike;Western Bonelli's Warbler;Berglaubsänger;Phylloscopus bonelli;A;X;0
+323;Himalájai füzike;Hume's Leaf Warbler;Tienschan-Laubsänger;Phylloscopus humei;A;X;0
+324;Vándorfüzike;Yellow-browed Warbler;Gelbbrauen-Laubsänger;Phylloscopus inornatus;A;R;0
+325;Királyfüzike;Pallas's Leaf Warbler;Goldhähnchen-Laubsänger;Phylloscopus proregulus;A;R;0
+326;Vastagcsőrű füzike;Radde's Warbler;Bartlaubsänger;Phylloscopus schwarzi;A;X;0
+327;Barna füzike;Dusky Warbler;Dunkellaubsänger;Phylloscopus fuscatus;A;X;0
+328;Fitiszfüzike;Willow Warbler;Fitis;Phylloscopus trochilus;A;FG;15000-20000
+329;Csilpcsalpfüzike;Common Chiffchaff;Zilpzalp;Phylloscopus collybita;A;FG;432000-444000
+330;Szibériai csilpcsalpfüzike;Siberian Chiffchaff;Sibirischer Zilpzalp;Phylloscopus collybita tristis;A;X;0
+331;Nádirigó;Great Reed Warbler;Drosselrohrsänger;Acrocephalus arundinaceus;A;FG;211000-224000
+332;Fülemülesitke;Moustached Warbler;Mariskenrohrsänger;Acrocephalus melanopogon;A;FG;2500-3500
+333;Csíkosfejű nádiposzáta;Aquatic Warbler;Seggenrohrsänger;Acrocephalus paludicola;A;OR;0
+334;Foltos nádiposzáta;Sedge Warbler;Schilfrohrsänger;Acrocephalus schoenobaenus;A;FG;236000-254000
+335;Rozsdás nádiposzáta;Paddyfield Warbler;Feldrohrsänger;Acrocephalus agricola;A;R;0
+336;Berki nádiposzáta;Blyth's Reed Warbler;Buschrohrsänger;Acrocephalus dumetorum;A;X;0
+337;Cserregő nádiposzáta;Eurasian Reed Warbler;Teichrohrsänger;Acrocephalus scirpaceus;A;FG;91000-122000
+338;Énekes nádiposzáta;Marsh Warbler;Sumpfrohrsänger;Acrocephalus palustris;A;FG;113000-152000
+339;Kis geze;Booted Warbler;Buschspötter;Iduna caligata;A;X;0
+340;Halvány geze;Eastern Olivaceous Warbler;Blassspötter;Iduna pallida;A;FG;180-250
+341;Déli geze;Melodious Warbler;Orpheusspötter;Hippolais polyglotta;A;X;0
+342;Kerti geze;Icterine Warbler;Gelbspötter;Hippolais icterina;A;FG;3000-5000
+343;Berki tücsökmadár;River Warbler;Schlagschwirl;Locustella fluviatilis;A;FG;13000-30000
+344;Nádi tücsökmadár;Savi's Warbler;Rohrschwirl;Locustella luscinioides;A;FG;51000-56000
+345;Réti tücsökmadár;Common Grasshopper Warbler;Feldschwirl;Locustella naevia;A;FG;7800-9200
+346;Szuharbújó;Zitting Cisticola;Zistensänger;Cisticola juncidis;A;X;0
+347;Barátposzáta;Eurasian Blackcap;Mönchsgrasmücke;Sylvia atricapilla;A;FG;1056000-1104000
+348;Kerti poszáta;Garden Warbler;Gartengrasmücke;Sylvia borin;A;FG;300-800
+349;Karvalyposzáta;Barred Warbler;Sperbergrasmücke;Curruca nisoria;A;FG;25000-30000
+350;Kis poszáta;Lesser Whitethroat;Klappergrasmücke;Curruca curruca;A;FG;53000-123000
+351;Kucsmás poszáta;Sardinian Warbler;Samtkopf-Grasmücke;Curruca melanocephala;A;X;0
+352;Bajszos poszáta;Eastern Subalpine Warbler;Balkan-Bartgrasmücke;Curruca cantillans;A;X;0
+353;Mezei poszáta;Common Whitethroat;Dorngrasmücke;Curruca communis;A;FG;235000-249000
+354;Tüzesfejű királyka;Common Firecrest;Sommergoldhähnchen;Regulus ignicapilla;A;FG;400-500
+355;Sárgafejű királyka;Goldcrest;Wintergoldhähnchen;Regulus regulus;A;FG;5000-12000
+356;Ökörszem;Eurasian Wren;Zaunkönig;Troglodytes troglodytes;A;FG;46000-71000
+357;Csuszka;Eurasian Nuthatch;Kleiber;Sitta europaea;A;FG;168000-179000
+358;Hajnalmadár;Wallcreeper;Mauerläufer;Tichodroma muraria;A;G;0
+359;Hegyi fakusz;Eurasian Treecreeper;Waldbaumläufer;Certhia familiaris;A;FG;10000-15000
+360;Rövidkarmú fakusz;Short-toed Treecreeper;Gartenbaumläufer;Certhia brachydactyla;A;FG;20000-30000
+361;Pásztormadár;Rosy Starling;Rosenstar;Pastor roseus;A;OR;0
+362;Seregély;Common Starling;Star;Sturnus vulgaris;A;FG;710000-990000
+363;Örvös rigó;Ring Ouzel;Ringdrossel;Turdus torquatus;A;G;0
+364;Fekete rigó;Common Blackbird;Amsel;Turdus merula;A;FG;950000-1070000
+365;Feketetorkú rigó;Black-throated Thrush;Schwarzkehldrossel;Turdus atrogularis;A;X;0
+366;Naumann-rigó;Naumann's Thrush;Rostschwanzdrossel;Turdus naumanni;A;X;0
+367;Fenyőrigó;Fieldfare;Wacholderdrossel;Turdus pilaris;A;FG;30-100
+368;Szőlőrigó;Redwing;Rotdrossel;Turdus iliacus;A;G;0
+369;Énekes rigó;Song Thrush;Singdrossel;Turdus philomelos;A;FG;366000-430000
+370;Léprigó;Mistle Thrush;Misteldrossel;Turdus viscivorus;A;FG;7000-12000
+371;Szürke légykapó;Spotted Flycatcher;Grauschnäpper;Muscicapa striata;A;FG;41000-67000
+372;Vörösbegy;European Robin;Rotkehlchen;Erithacus rubecula;A;FG;266000-284000
+373;Kékbegy;Bluethroat;Blaukehlchen;Luscinia svecica;A;FG;1200-2000
+374;Vöröscsillagos kékbegy;Red-spotted Bluethroat;Rotsterniges Blaukehlchen;Luscinia svecica svecica;A;X;0
+375;Nagy fülemüle;Thrush Nightingale;Sprosser;Luscinia luscinia;A;OG;0-5
+376;Fülemüle;Common Nightingale;Nachtigall;Luscinia megarhynchos;A;FG;493000-505000
+377;Kékfarkú;Red-flanked Bluetail;Blauschwanz;Tarsiger cyanurus;A;X;0
+378;Kis légykapó;Red-breasted Flycatcher;Zwergschnäpper;Ficedula parva;A;FG;40-65
+379;Kormos légykapó;European Pied Flycatcher;Trauerschnäpper;Ficedula hypoleuca;A;OG;30-60
+380;Örvös légykapó;Collared Flycatcher;Halsbandschnäpper;Ficedula albicollis;A;FG;76000-81000
+381;Házi rozsdafarkú;Black Redstart;Hausrotschwanz;Phoenicurus ochruros;A;FG;172000-181000
+382;Kerti rozsdafarkú;Common Redstart;Gartenrotschwanz;Phoenicurus phoenicurus;A;FG;60-180
+383;Kövirigó;Common Rock Thrush;Steinrötel;Monticola saxatilis;A;OR;0
+384;Kék kövirigó;Blue Rock Thrush;Blaumerle;Monticola solitarius;A;X;0
+385;Rozsdás csuk;Whinchat;Braunkehlchen;Saxicola rubetra;A;FG;4000-9000
+386;Cigánycsuk;European Stonechat;Schwarzkehlchen;Saxicola rubicola;A;FG;194000-204000
+387;Hantmadár;Northern Wheatear;Steinschmätzer;Oenanthe oenanthe;A;FG;2500-5000
+388;Pusztai hantmadár;Isabelline Wheatear;Isabellsteinschmätzer;Oenanthe isabellina;A;X;0
+389;Sivatagi hantmadár;Desert Wheatear;Wüstensteinschmätzer;Oenanthe deserti;A;X;0
+390;Déli hantmadár;Eastern Black-eared Wheatear;Balkansteinschmätzer;Oenanthe melanoleuca;A;R;0
+391;Apácahantmadár;Pied Wheatear;Nonnensteinschmätzer;Oenanthe pleschanka;A;X;0
+392;Vízirigó;White-throated Dipper;Wasseramsel;Cinclus cinclus;A;OG;0-4
+393;Házi veréb;House Sparrow;Haussperling;Passer domesticus;A;FG;836000-863000
+394;Olasz veréb;Italian Sparrow;Italiensperling;Passer italiae;E;X;0
+395;Berki veréb;Spanish Sparrow;Weidensperling;Passer hispaniolensis;A;X;0
+396;Mezei veréb;Eurasian Tree Sparrow;Feldsperling;Passer montanus;A;FG;1552000-1646000
+397;Havasipinty;White-winged Snowfinch;Schneesperling;Montifringilla nivalis;A;X;0
+398;Havasi szürkebegy;Alpine Accentor;Alpenbraunelle;Prunella collaris;A;G;0
+399;Szibériai szürkebegy;Siberian Accentor;Bergbraunelle;Prunella montanella;A;X;0
+400;Feketetorkú szürkebegy;Black-throated Accentor;Schwarzkehlbraunelle;Prunella atrogularis;A;X;0
+401;Erdei szürkebegy;Dunnock;Heckenbraunelle;Prunella modularis;A;FG;500-1000
+402;Sárga billegető;Western Yellow Wagtail;Schafstelze;Motacilla flava;A;FG;75000-150000
+403;Északi billegető;Grey-headed Wagtail;Nordische Schafstelze;Motacilla flava thunbergi;A;G;0
+404;Kucsmás billegető;Black-headed Wagtail;Maskenstelze;Motacilla flava feldegg;A;OG;0
+405;Citrombillegető;Citrine Wagtail;Zitronenstelze;Motacilla citreola;A;R;0
+406;Hegyi billegető;Grey Wagtail;Gebirgsstelze;Motacilla cinerea;A;FG;300-600
+407;Barázdabillegető;White Wagtail;Bachstelze;Motacilla alba;A;FG;67000-71000
+408;Angliai barázdabillegető;Pied Wagtail;Bachstelze;Motacilla alba yarrellii;A;X;0
+409;Sarkantyús pityer;Richard's Pipit;Spornpieper;Anthus richardi;A;X;0
+410;Parlagi pityer;Tawny Pipit;Brachpieper;Anthus campestris;A;FG;5700-7100
+411;Réti pityer;Meadow Pipit;Wiesenpieper;Anthus pratensis;A;G;0
+412;Erdei pityer;Tree Pipit;Baumpieper;Anthus trivialis;A;FG;84000-130000
+413;Rozsdástorkú pityer;Red-throated Pipit;Rotkehlpieper;Anthus cervinus;A;G;0
+414;Havasi pityer;Water Pipit;Bergpieper;Anthus spinoletta;A;G;0
+415;Parti pityer;Eurasian Rock Pipit;Strandpieper;Anthus petrosus;A;X;0
+416;Erdei pinty;Common Chaffinch;Buchfink;Fringilla coelebs;A;FG;1279000-1332000
+417;Fenyőpinty;Brambling;Bergfink;Fringilla montifringilla;A;G;0
+418;Meggyvágó;Hawfinch;Kernbeißer;Coccothraustes coccothraustes;A;FG;124000-174000
+419;Nagy pirók;Pine Grosbeak;Hakengimpel;Pinicola enucleator;B;X;0
+420;Süvöltő;Eurasian Bullfinch;Gimpel;Pyrrhula pyrrhula;A;FG;5-15
+421;Trombitás sivatagipinty;Trumpeter Finch;Wüstengimpel;Bucanetes githagineus;A;X;0
+422;Karmazsinpirók;Common Rosefinch;Karmingimpel;Carpodacus erythrinus;A;OR;2-3
+423;Rózsás pirók;Pallas's Rosefinch;Rosengimpel;Carpodacus roseus;B;X;0
+424;Zöldike;European Greenfinch;Grünfink;Chloris chloris;A;FG;374000-388000
+425;Sárgacsőrű kenderike;Twite;Berghänfling;Linaria flavirostris;A;G;0
+426;Kenderike;Common Linnet;Bluthänfling;Linaria cannabina;A;FG;73000-98000
+427;Zsezse;Common Redpoll;Taigabirkenzeisig;Acanthis flammea;A;G;0
+428;Barna zsezse;Lesser Redpoll;Alpenbirkenzeisig;Acanthis cabaret;A;X;0
+429;Zsezse faj;Redpoll sp.;Birkenzeisig sp.;Acanthis sp.;A;G;0
+430;Szürke zsezse;Arctic Redpoll;Polarbirkenzeisig;Acanthis hornemanni;B;X;0
+431;Keresztcsőrű;Red Crossbill;Fichtenkreuzschnabel;Loxia curvirostra;A;FG;200-400
+432;Szalagos keresztcsőrű;Two-barred Crossbill;Bindenkreuzschnabel;Loxia leucoptera;A;X;0
+433;Tengelic;European Goldfinch;Stieglitz;Carduelis carduelis;A;FG;406000-422000
+434;Csicsörke;European Serin;Girlitz;Serinus serinus;A;FG;113000-130000
+435;Csíz;Eurasian Siskin;Erlenzeisig;Spinus spinus;A;FG;100-150
+436;Sarkantyús sármány;Lapland Longspur;Spornammer;Calcarius lapponicus;A;G;0
+437;Hósármány;Snow Bunting;Schneeammer;Plectrophenax nivalis;A;G;0
+438;Sordély;Corn Bunting;Grauammer;Emberiza calandra;A;FG;40000-55000
+439;Citromsármány;Yellowhammer;Goldammer;Emberiza citrinella;A;FG;493000-508000
+440;Fenyősármány;Pine Bunting;Fichtenammer;Emberiza leucocephalos;A;X;0
+441;Bajszos sármány;Rock Bunting;Zippammer;Emberiza cia;A;FG;500-750
+442;Kerti sármány;Ortolan Bunting;Ortolan;Emberiza hortulana;A;OR;0-1
+443;Sövénysármány;Cirl Bunting;Zaunammer;Emberiza cirlus;A;OR;0
+444;Törpesármány;Little Bunting;Zwergammer;Emberiza pusilla;A;X;0
+445;Erdei sármány;Rustic Bunting;Waldammer;Emberiza rustica;A;X;0
+446;Vörhenyes sármány;Chestnut Bunting;Rötelammer;Emberiza rutila;A;X;0
+447;Kucsmás sármány;Black-headed Bunting;Kappenammer;Emberiza melanocephala;A;OR;2-4
+448;Nádi sármány;Common Reed Bunting;Rohrammer;Emberiza schoeniclus;A;FG;10700-121000
+449;Hibrid;Hybrid;Hybrid;Hybrid;-;-;0
+450;Szökevény;Escapee;Gefangenschaftsflüchtling;Escapee;E;-;0

@@ -41,10 +41,7 @@ export default function Observation(observationData: IBirdingHuData) {
                     <Text style={styles.observationBody}>
                         {observationData.individuals}
                     </Text>
-                <Text style={styles.observationBody}>
-                    Image: {observationData.imageLink}
-                    </Text>
-                    <Button
+                        <Button
                         title={'Show on map'}
                         onPress={() => setModalContent('map')}
                     />
@@ -106,18 +103,18 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#2e3a24',
         width: '100%',
-        height: 500,
-        alignItems: 'center',
+        height: '100%',
         justifyContent: 'center',
         flexDirection: 'row',
-        flexWrap: 'wrap',
     },
     observationContainer: {
-        backgroundColor: '#57596b',
+        backgroundColor: '#0c2506',
+        borderRadius: 10,
         width: '90%',
-        height: '35%',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
+        padding: 10,
+        marginBottom: 10,
     },
     observationHeader: {
         fontSize: 20,

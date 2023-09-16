@@ -1,54 +1,35 @@
-import { useEffect, useState } from "react";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
-import DropDownPicker from 'react-native-dropdown-picker'
+import {useEffect, useState} from "react";
+import {ScrollView, StyleSheet, Text, View} from "react-native";
 import BirdingHuExtractor from '../../utils/crawler/birding/birdingHuExtractor'
 import Observation from "./Observation";
-import { IBirdingHuData } from "../../types/types";
+import {IBirdingHuData} from "../../types/types";
+import {getUrls} from "./Observations.utils";
 
 export default function Observations() {
-    const urls = [
-        {
-            value: 'http://birding.hu/index.php?page=megfigyelesek&cid=regionalis_fajok_adatai_az_elmult_14_napban',
-            label: 'First page'
-        },
-        {
-            value: 'http://birding.hu/index.php?page=megfigyelesek&cid=regionalis_fajok_adatai_az_elmult_14_napban&lap=100',
-            label: 'Second page'
-        },
-    ]
-
-    const [open, setOpen] = useState(false);
-    const [value, setValue] = useState(urls[0].value);
+    const baseUrl = 'http://birding.hu/index.php?page=megfigyelesek&cid=regionalis_fajok_adatai_az_elmult_14_napban';
+    const [urls, setUrls] = useState([] as string[]);
     const [data, setData] = useState([] as IBirdingHuData[]);
 
     useEffect(() => {
-        const crawler = new BirdingHuExtractor(value);
-        let ignore = false;
+        getUrls(baseUrl).then((urls) => {
+            setUrls(urls);
+        });
+    }, []);
+
+    useEffect(() => {
+        const crawler = new BirdingHuExtractor(urls);
         setData([]);
         crawler.getData().then((result: IBirdingHuData[]) => {
-            if (!ignore) {
                 setData(result);
-            }
         });
-        return () => {
-            ignore = true;
-        }
-    }, [value]);
+    }, [urls]);
 
     return (
         <View style={styles.container}>
-            <View>
-                <DropDownPicker
-                    open={open}
-                    value={value}
-                    items={urls}
-                    setOpen={setOpen}
-                    setValue={setValue}
-                    maxHeight={3000}
-                />
-            </View>
             <Text style={styles.title}>Observations</Text>
-            <ScrollView>
+            <Text style={styles.title}>{`${urls}`}</Text>
+            {urls
+            ? <ScrollView>
                 <>
                     {data.map((observation) => {
                         return <Observation
@@ -59,6 +40,7 @@ export default function Observations() {
                     }
                 </>
             </ScrollView>
+            : <Text>Loading...</Text>}
         </View>
     );
 }
