@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 import DropDownPicker from 'react-native-dropdown-picker'
 import BirdingHuExtractor from '../../utils/crawler/birding/birdingHuExtractor'
-import Observation from "./Observation";
+import { Observation } from '../Observation';
 import { IBirdingHuData, IErrorMessage } from "../../types/types";
 
-export default function Observations() {
+export const ObservationList = () => {
     const urls = [
         {
             value: 'http://birding.hu/index.php?page=megfigyelesek&cid=regionalis_fajok_adatai_az_elmult_14_napban',
@@ -31,14 +31,13 @@ export default function Observations() {
             if (!ignore && Array.isArray(result)) {
                 setData(result);
             }
-            if (!ignore && result.length === 0) {
+            if (!ignore && Array.isArray(result) && result.length === 0) {
                 setError({message: 'No data found'});
                 setIsError(true);
             }
             if (!ignore && result.hasOwnProperty('message')) {
                 setError(result as IErrorMessage);
                 setIsError(true);
-                console.log(result);
             }
         });
         return () => {

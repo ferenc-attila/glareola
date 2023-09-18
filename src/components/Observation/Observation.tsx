@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import {StyleSheet, Text, View, Button, Modal, Image} from 'react-native';
-import MapView, {Marker} from 'react-native-maps';
-import {IBirdingHuData} from '../../types/types';
+import MapView, { Marker } from 'react-native-maps';
+import { IBirdingHuData } from '../../types/types';
 
-export default function Observation(observationData: IBirdingHuData) {
+export const Observation = (observationData: IBirdingHuData) => {
     const [modalVisible, setModalVisible] = useState(false);
     const [modalContent, setModalContent] = useState('none');
 
@@ -24,13 +24,13 @@ export default function Observation(observationData: IBirdingHuData) {
             <View style={styles.container}>
                 <View style={styles.observationContainer}>
                     <Text style={styles.observationHeader}>
-                        {observationData.speciesSci}
-                    </Text>
-                    <Text style={styles.observationBody}>
-                        {observationData.county}
+                        {observationData.speciesHun}
                     </Text>
                     <Text style={styles.observationBody}>
                         {observationData.locality}
+                    </Text>
+                    <Text style={styles.observationBody}>
+                        {observationData.county}
                     </Text>
                     <Text style={styles.observationBody}>
                         {observationData.area}
@@ -41,8 +41,8 @@ export default function Observation(observationData: IBirdingHuData) {
                     <Text style={styles.observationBody}>
                         {observationData.individuals}
                     </Text>
-                <Text style={styles.observationBody}>
-                    Image: {observationData.imageLink}
+                    <Text style={styles.observationBody}>
+                        {observationData.observers.join(', ')}
                     </Text>
                     <Button
                         title={'Show on map'}

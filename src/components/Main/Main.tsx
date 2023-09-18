@@ -1,13 +1,13 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-export default function Main() {
+export const Main = () => {
     return (
         <>
             <View style={styles.textContainer}>
                 <Text style={styles.heading}>Glareola</Text>
                 <Image
-                    source={require('../../assets/images/glareola_pratincola.jpg')}
+                    source={require('../../../assets/images/glareola_pratincola.jpg')}
                     style={styles.titleImage}
                 ></Image>
                 <Text style={styles.title}>A crawler for rarity observations</Text>
