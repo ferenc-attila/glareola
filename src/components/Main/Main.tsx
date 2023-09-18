@@ -1,5 +1,6 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
+import { ABOUT } from '../../content';
 
 export const Main = () => {
     return (
@@ -11,7 +12,7 @@ export const Main = () => {
                     style={styles.titleImage}
                 ></Image>
                 <Text style={styles.title}>A crawler for rarity observations</Text>
-                <Text style={styles.appInfo}>0.0.1</Text>
+                <Text style={styles.appInfo}>{ABOUT.APP.VERSION}</Text>
             </View>
         </>
     );
@@ -42,9 +43,8 @@ const styles = StyleSheet.create({
     },
     titleImage: {
         margin: 30,
-        width: '80%',
-        height: '40%',
-        borderRadius: 10,
-        objectFit: 'scale-down',
+        maxWidth: '90%',
+        maxHeight: '50%',
+        resizeMode: 'contain',
     },
 });

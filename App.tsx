@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, StatusBar, StyleSheet, View } from 'react-native';
+import { Pressable, StatusBar, StyleSheet, Text, View } from 'react-native';
 import 'reflect-metadata';
 import { Main } from './src/components/Main';
 import { About } from './src/components/About';
@@ -31,22 +31,18 @@ export default function App() {
         <>
             <StatusBar/>
             <View style={styles.buttonContainer}>
-                <Button
-                    title={'Home'}
-                    onPress={() => setAppScreen('main')}
-                ></Button>
-                <Button
-                    title={'Observations'}
-                    onPress={() => setAppScreen('observations')}
-                ></Button>
-                <Button
-                    title={'Settings'}
-                    onPress={() => setAppScreen('settings')}
-                ></Button>
-                <Button
-                    title={'About'}
-                    onPress={() => setAppScreen('about')}
-                ></Button>
+                <Pressable onPress={() => setAppScreen('main')}>
+                    <Text style={styles.button}>Home</Text>
+                </Pressable>
+                <Pressable onPress={() => setAppScreen('observations')}>
+                    <Text style={styles.button}>Observations</Text>
+                </Pressable>
+                <Pressable onPress={() => setAppScreen('settings')}>
+                    <Text style={styles.button}>Settings</Text>
+                </Pressable>
+                <Pressable onPress={() => setAppScreen('about')}>
+                    <Text style={styles.button}>About</Text>
+                </Pressable>
             </View>
             {getScreen(appScreen)}
         </>
@@ -58,8 +54,16 @@ const styles = StyleSheet.create({
         padding: 25,
         flexDirection: 'row',
         flexWrap: 'wrap',
-        justifyContent: 'space-between',
+        justifyContent: 'space-evenly',
         alignItems: 'stretch',
         backgroundColor: '#2e3a24'
     },
+    button: {
+        padding: 10,
+        borderRadius: 5,
+        backgroundColor: '#4d9460',
+        color: '#ffffff',
+        fontSize: 15,
+        fontWeight: 'bold'
+    }
 });

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {StyleSheet, Text, View, Button, Modal, Image} from 'react-native';
+import { StyleSheet, Text, View, Modal, Image, Pressable } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import { IBirdingHuData } from '../../types/types';
 
@@ -44,19 +44,21 @@ export const Observation = (observationData: IBirdingHuData) => {
                     <Text style={styles.observationBody}>
                         {observationData.observers.join(', ')}
                     </Text>
-                    <Button
-                        title={'Show on map'}
-                        onPress={() => setModalContent('map')}
-                    />
+                    {observationData.notes
+                        && <Text style={styles.observationBody}>
+                        {observationData.notes}
+                    </Text>}
+                    <Pressable onPress={() => setModalContent('map')}>
+                        <Text style={styles.button}> Show on map </Text>
+                    </Pressable>
                     {observationData.imageLink
-                        && <Button
-                            title={'Show image'}
-                            onPress={() => setModalContent('image')}
-                        />}
+                        && <Pressable onPress={() => setModalContent('image')}>
+                            <Text style={styles.button}> Show image </Text>
+                        </Pressable>}
                 </View>
             </View>
             <Modal
-                animationType='slide'
+                animationType="slide"
                 transparent={true}
                 visible={modalVisible}
                 onRequestClose={() => {
@@ -87,46 +89,55 @@ export const Observation = (observationData: IBirdingHuData) => {
                         {modalContent == 'image'
                             && observationData.imageLink
                             && <Image
-                                source={{uri: observationData.imageLink}}
                                 style={styles.image}
+                                source={{uri: observationData.imageLink}}
                             />}
-                        <Button
-                            title={'Close'}
-                            onPress={() => setModalVisible(!modalVisible)}
-                        />
+                        <Pressable onPress={() => setModalVisible(!modalVisible)}>
+                            <Text style={styles.button}>Close</Text>
+                        </Pressable>
                     </View>
                 </View>
             </Modal>
         </>
     );
-}
+};
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#2e3a24',
         width: '100%',
-        height: 500,
         alignItems: 'center',
         justifyContent: 'center',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
     },
     observationContainer: {
-        backgroundColor: '#57596b',
+        borderRadius: 10,
+        backgroundColor: '#595947',
         width: '90%',
-        height: '35%',
         alignItems: 'center',
         justifyContent: 'center',
+        padding: 10,
+        margin: 10,
     },
     observationHeader: {
         fontSize: 20,
         fontWeight: 'bold',
         color: '#fff',
+        padding: 5,
     },
     observationBody: {
         fontSize: 16,
         color: '#fff',
+        textAlign: 'center',
+    },
+    button: {
+        padding: 10,
+        margin: 10,
+        borderRadius: 5,
+        backgroundColor: '#4d9460',
+        color: '#ffffff',
+        fontSize: 15,
+        fontWeight: 'bold'
     },
     modalContainer: {
         flex: 1,
@@ -135,7 +146,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     modal: {
-        backgroundColor: '#57596b',
+        backgroundColor: '#a9a996',
         padding: 10,
         margin: 10,
         width: '90%',
@@ -146,12 +157,12 @@ const styles = StyleSheet.create({
     map: {
         width: '100%',
         height: '90%',
+        margin: 10,
     },
     image: {
         margin: 10,
-        width: '80%',
-        height: '40%',
-        borderRadius: 10,
-        objectFit: 'scale-down',
+        width: '100%',
+        height: '90%',
+        resizeMode: 'contain',
     },
 });
