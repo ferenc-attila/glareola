@@ -11,7 +11,7 @@ const createTextComponents = (text: string, index: number | string, style: objec
 }
 
 // TODO: Mapping with sectionlist instead of custom function
-export default function About() {
+export const About = () => {
     return (
         <>
             <View style={styles.textContainer}>

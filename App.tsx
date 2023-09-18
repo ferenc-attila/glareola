@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Button, StatusBar, StyleSheet, View } from 'react-native';
 import 'reflect-metadata';
-import Main from "./components/Main/Main";
-import About from "./components/About/About";
-import Observations from "./components/Observations/Observations";
-import { Settings } from "./components/Settings/Settings";
+import { Main } from './src/components/Main';
+import { About } from './src/components/About';
+import { ObservationList } from './src/components/ObservationList';
+import { Settings } from './src/components/Settings';
 
 export default function App() {
 
@@ -19,7 +19,7 @@ export default function App() {
                 return <About></About>
             }
             case ('observations'): {
-                return <Observations></Observations>
+                return <ObservationList></ObservationList>
             }
             case ('settings'): {
                 return <Settings></Settings>
