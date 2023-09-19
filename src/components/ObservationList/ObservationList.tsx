@@ -8,11 +8,11 @@ import { IBirdingHuData, IErrorMessage } from "../../types/types";
 export const ObservationList = () => {
     const urls = [
         {
-            value: 'http://birding.hu/index.php?page=megfigyelesek&cid=erdekes_megfigyelesek_az_elmult_14_napban',
+            value: 'http://birding.hu/index.php?page=&cid=az_elmult_14_nap_ritkasagai&per_page=100',
             label: 'First page'
         },
         {
-            value: 'http://birding.hu/index.php?page=megfigyelesek&cid=erdekes_megfigyelesek_az_elmult_14_napban&lap=100',
+            value: 'http://birding.hu/index.php?page=&cid=az_elmult_14_nap_ritkasagai&lap=100',
             label: 'Second page'
         },
     ];
