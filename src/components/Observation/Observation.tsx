@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Modal, Image, Pressable } from 'react-native';
-import MapView, { Marker } from 'react-native-maps';
 import { IBirdingHuData } from '../../types/types';
 
 export const Observation = (observationData: IBirdingHuData) => {
@@ -48,9 +47,6 @@ export const Observation = (observationData: IBirdingHuData) => {
                         && <Text style={styles.observationBody}>
                         {observationData.notes}
                     </Text>}
-                    <Pressable onPress={() => setModalContent('map')}>
-                        <Text style={styles.button}> Show on map </Text>
-                    </Pressable>
                     {observationData.imageLink
                         && <Pressable onPress={() => setModalContent('image')}>
                             <Text style={styles.button}> Show image </Text>
@@ -67,25 +63,6 @@ export const Observation = (observationData: IBirdingHuData) => {
             >
                 <View style={styles.modalContainer}>
                     <View style={styles.modal}>
-                        {modalContent == 'map'
-                            && <MapView
-                                style={styles.map}
-                                initialRegion={{
-                                    latitude: observationData.latitude,
-                                    longitude: observationData.longitude,
-                                    latitudeDelta: 0.0922,
-                                    longitudeDelta: 0.0421,
-                                }}
-                            >
-                                <Marker
-                                    coordinate={{
-                                        latitude: observationData.latitude,
-                                        longitude: observationData.longitude,
-                                    }}
-                                    title={observationData.speciesSci}
-                                    description={observationData.locality}
-                                />
-                            </MapView>}
                         {modalContent == 'image'
                             && observationData.imageLink
                             && <Image
@@ -153,11 +130,6 @@ const styles = StyleSheet.create({
         height: '90%',
         alignItems: 'center',
         justifyContent: 'center',
-    },
-    map: {
-        width: '100%',
-        height: '90%',
-        margin: 10,
     },
     image: {
         margin: 10,
