@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View } from "react-native";
-import { ABOUT } from "../../content";
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ABOUT } from '../../content';
 
 const createTextComponents = (text: string, index: number | string, style: object) => {
             return <Text
@@ -12,34 +12,48 @@ const createTextComponents = (text: string, index: number | string, style: objec
 
 export const About = () => {
     return (
-        <>
-            <View style={styles.textContainer}>
-                <Text style={styles.title}>
-                    {ABOUT.APP.TITLE}
-                </Text>
-                {Object.values(ABOUT.APP).map((value, index) => {
-                    if (typeof value === 'string' && value !== ABOUT.APP.TITLE) {
-                        return createTextComponents(value, index, styles.description);
+        <View style={styles.textContainer}>
+            <ScrollView>
+                <View style={styles.textContainer}>
+                    <Text style={styles.title}>
+                        {ABOUT.APP.TITLE}
+                    </Text>
+                    {Object.values(ABOUT.APP).map((value, index) => {
+                        if (typeof value === 'string' && value !== ABOUT.APP.TITLE) {
+                            return createTextComponents(value, index, styles.description);
+                            }
                         }
-                    }
-                )}
-                <Text style={styles.description}>
-                    {ABOUT.APP.LICENSE.SHORT_NAME}
-                </Text>
-                <Text style={styles.title}>
-                    {ABOUT.COVER_IMAGE.TITLE}
-                </Text>
-                {Object.values(ABOUT.COVER_IMAGE).map((value, index) => {
-                    if (typeof value === 'string' && value !== ABOUT.COVER_IMAGE.TITLE) {
-                        return createTextComponents(value, index, styles.description);
+                    )}
+                    <Text style={styles.description}>
+                        {ABOUT.APP.LICENSE.SHORT_NAME}
+                    </Text>
+                    <Text style={styles.title}>
+                        {ABOUT.COVER_IMAGE.TITLE}
+                    </Text>
+                    {Object.values(ABOUT.COVER_IMAGE).map((value, index) => {
+                        if (typeof value === 'string' && value !== ABOUT.COVER_IMAGE.TITLE) {
+                            return createTextComponents(value, index, styles.description);
+                            }
                         }
-                    }
-                )}
-                <Text style={styles.description}>
-                    {ABOUT.COVER_IMAGE.LICENSE.SHORT_NAME}
-                </Text>
-            </View>
-        </>
+                    )}
+                    <Text style={styles.description}>
+                        {ABOUT.COVER_IMAGE.LICENSE.SHORT_NAME}
+                    </Text>
+                    <Text style={styles.title}>
+                        {ABOUT.ICON_IMAGE.TITLE}
+                    </Text>
+                    {Object.values(ABOUT.ICON_IMAGE).map((value, index) => {
+                        if (typeof value === 'string' && value !== ABOUT.ICON_IMAGE.TITLE) {
+                            return createTextComponents(value, index, styles.description);
+                            }
+                        }
+                    )}
+                    <Text style={styles.description}>
+                        {ABOUT.ICON_IMAGE.LICENSE.SHORT_NAME}
+                    </Text>
+                </View>
+            </ScrollView>
+        </View>
     );
 }
 
@@ -60,5 +74,6 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontSize: 16,
         padding: 5,
+        textAlign: 'center',
     },
 });

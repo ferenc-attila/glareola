@@ -8,7 +8,7 @@ export const Main = () => {
             <View style={styles.textContainer}>
                 <Text style={styles.heading}>Glareola</Text>
                 <Image
-                    source={require('../../../assets/images/glareola_pratincola.jpg')}
+                    source={require('../../../assets/images/glareola_pratincola.png')}
                     style={styles.titleImage}
                 ></Image>
                 <Text style={styles.title}>A crawler for rarity observations</Text>
