@@ -1,0 +1,22 @@
+{
+    "APP_NAME": "Glareola",
+    "APP_DESCRIPTION": "A crawler for rarity observations",
+    "APP_AUTHOR": "Attila Ferenc",
+
+    "COVER_IMAGE_NAME": "Cover Image",
+    "COVER_IMAGE_DESCRIPTION": "Collared pratincole (Glareola pratincola)",
+    "COVER_IMAGE_AUTHOR": "Saswat Mishra",
+    "COVER_IMAGE_DATE": "2018-03-30",
+    "COVER_IMAGE_LOCATION": "Nal Sarovar, Gujarat, India",
+
+    "ICON_IMAGE_NAME": "Icon Image",
+    "ICON_IMAGE_DESCRIPTION": "Collared pratincole (Glareola pratincola) portrait",
+    "ICON_IMAGE_AUTHOR": "Ludovic Hirlimann",
+    "ICON_IMAGE_DATE": "2010-05-16",
+    "ICON_IMAGE_LOCATION": "Amboseli National Park, Kenya",
+
+    "SETTINGS_SCREEN_TITLE": "Settings",
+    "SETTINGS_SCREEN_DESCRIPTION": "Coming soon...",
+
+    "OBSERVATIONS_SCREEN_TITLE": "Observations"
+}

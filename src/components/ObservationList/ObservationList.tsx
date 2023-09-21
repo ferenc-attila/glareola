@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
+import i18n from '../../localization/localization'
 import BirdingHuExtractor from '../../utils/crawler/birding/birdingHuExtractor';
 import { Observation } from '../Observation';
 import { IBirdingHuData, IErrorMessage } from "../../types/types";
@@ -35,7 +36,7 @@ export const ObservationList = () => {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Observations</Text>
+            <Text style={styles.title}>{i18n.t('OBSERVATIONS_SCREEN_TITLE')}</Text>
             <ScrollView>
                 {isError
                     ? <>

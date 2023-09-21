@@ -2,7 +2,7 @@
   "expo": {
     "name": "Glareola",
     "slug": "glareola",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "githubUrl": "https://github.com/ferenc-attila/glareola",
     "icon": "./assets/images/glareola_portrait.png",
     "userInterfaceStyle": "dark",
@@ -16,7 +16,10 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "CFBundleAllowMixedLocalizations": true
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -24,6 +27,13 @@
         "backgroundColor": "#ffffff"
       },
       "package": "hu.delheves.glareola"
+    },
+    "locales": {
+      "en": "./src/localization/translations/en_GB.json",
+      "de": "./src/localization/translations/de_DE.json",
+      "hu": "./src/localization/translations/hu_HU.json",
+      "sk": "./src/localization/translations/sk_SK.json",
+      "ro": "./src/localization/translations/ro_RO.json"
     },
     "web": {
       "favicon": "./assets/images/glareola_portrait.png"
@@ -42,7 +52,8 @@
             "usesCleartextTraffic": true
           }
         }
-      ]
+      ],
+      "expo-localization"
     ]
   }
 }

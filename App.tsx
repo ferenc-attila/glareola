@@ -44,7 +44,7 @@ export default function App() {
                 </View>
                 <View style={styles.button}>
                     <Pressable onPress={() => setAppScreen('settings')}>
-                        <FontAwesome5 name='sun' size={24} color="white" />
+                        <FontAwesome5 name='tools' size={24} color="white" />
                     </Pressable>
                 </View>
                 <View style={styles.button}>
