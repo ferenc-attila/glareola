@@ -1,30 +1,18 @@
 import { useEffect, useState } from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
-import DropDownPicker from 'react-native-dropdown-picker'
-import BirdingHuExtractor from '../../utils/crawler/birding/birdingHuExtractor'
+import BirdingHuExtractor from '../../utils/crawler/birding/birdingHuExtractor';
 import { Observation } from '../Observation';
 import { IBirdingHuData, IErrorMessage } from "../../types/types";
 
 export const ObservationList = () => {
-    const urls = [
-        {
-            value: 'http://birding.hu/index.php?page=&cid=az_elmult_14_nap_ritkasagai&per_page=100',
-            label: 'First page'
-        },
-        {
-            value: 'http://birding.hu/index.php?page=&cid=az_elmult_14_nap_ritkasagai&lap=100',
-            label: 'Second page'
-        },
-    ];
+    const url = 'http://birding.hu/index.php?page=&cid=az_elmult_14_nap_ritkasagai&per_page=100';
 
-    const [open, setOpen] = useState(false);
-    const [value, setValue] = useState(urls[0].value);
     const [data, setData] = useState([] as IBirdingHuData[]);
     const [isError, setIsError] = useState(false);
     const [error, setError] = useState({} as IErrorMessage);
 
     useEffect(() => {
-        const crawler = new BirdingHuExtractor(value);
+        const crawler = new BirdingHuExtractor(url);
         let ignore = false;
         setData([]);
         crawler.getData().then((result) => {
@@ -43,20 +31,10 @@ export const ObservationList = () => {
         return () => {
             ignore = true;
         }
-    }, [value]);
+    }, [url]);
 
     return (
         <View style={styles.container}>
-            <View>
-                <DropDownPicker
-                    open={open}
-                    value={value}
-                    items={urls}
-                    setOpen={setOpen}
-                    setValue={setValue}
-                    maxHeight={3000}
-                />
-            </View>
             <Text style={styles.title}>Observations</Text>
             <ScrollView>
                 {isError
