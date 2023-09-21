@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Modal, Image, Pressable } from 'react-native';
+import { FontAwesome5 } from '@expo/vector-icons';
 import { IBirdingHuData } from '../../types/types';
 
 export const Observation = (observationData: IBirdingHuData) => {
@@ -48,9 +49,11 @@ export const Observation = (observationData: IBirdingHuData) => {
                         {observationData.notes}
                     </Text>}
                     {observationData.imageLink
-                        && <Pressable onPress={() => setModalContent('image')}>
-                            <Text style={styles.button}> Show image </Text>
-                        </Pressable>}
+                        && <View style={styles.button}>
+                            <Pressable onPress={() => setModalContent('image')}>
+                                <FontAwesome5 name='camera' size={24} color='white' />
+                            </Pressable>
+                        </View>}
                 </View>
             </View>
             <Modal
@@ -69,9 +72,11 @@ export const Observation = (observationData: IBirdingHuData) => {
                                 style={styles.image}
                                 source={{uri: observationData.imageLink}}
                             />}
-                        <Pressable onPress={() => setModalVisible(!modalVisible)}>
-                            <Text style={styles.button}>Close</Text>
-                        </Pressable>
+                        <View style={styles.button}>
+                            <Pressable onPress={() => setModalVisible(!modalVisible)}>
+                                <FontAwesome5 name='backward' size={24} color='white' />
+                            </Pressable>
+                        </View>
                     </View>
                 </View>
             </Modal>

@@ -3,7 +3,7 @@ export const ABOUT = {
         TITLE: 'Glareola Application',
         DESCRIPTION: 'Read rarity observations from birding.hu',
         AUTHORS: 'Attila Ferenc',
-        VERSION: '0.0.3',
+        VERSION: '0.0.4',
         DATE: '2023-09-18',
         LICENSE: {
             SHORT_NAME: 'MIT',

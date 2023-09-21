@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Pressable, StatusBar, StyleSheet, Text, View } from 'react-native';
 import 'reflect-metadata';
+import { FontAwesome5 } from '@expo/vector-icons';
 import { Main } from './src/components/Main';
 import { About } from './src/components/About';
 import { ObservationList } from './src/components/ObservationList';
@@ -31,18 +32,26 @@ export default function App() {
         <>
             <StatusBar/>
             <View style={styles.buttonContainer}>
-                <Pressable onPress={() => setAppScreen('main')}>
-                    <Text style={styles.button}>Home</Text>
-                </Pressable>
-                <Pressable onPress={() => setAppScreen('observations')}>
-                    <Text style={styles.button}>Observations</Text>
-                </Pressable>
-                <Pressable onPress={() => setAppScreen('settings')}>
-                    <Text style={styles.button}>Settings</Text>
-                </Pressable>
-                <Pressable onPress={() => setAppScreen('about')}>
-                    <Text style={styles.button}>About</Text>
-                </Pressable>
+                <View style={styles.button}>
+                    <Pressable onPress={() => setAppScreen('main')}>
+                        <FontAwesome5 name='home' size={24} color='white' />
+                    </Pressable>
+                </View>
+                <View style={styles.button}>
+                    <Pressable onPress={() => setAppScreen('observations')}>
+                        <FontAwesome5 name='binoculars' size={24} color='white' />
+                    </Pressable>
+                </View>
+                <View style={styles.button}>
+                    <Pressable onPress={() => setAppScreen('settings')}>
+                        <FontAwesome5 name='sun' size={24} color="white" />
+                    </Pressable>
+                </View>
+                <View style={styles.button}>
+                    <Pressable onPress={() => setAppScreen('about')}>
+                        <FontAwesome5 name="info-circle" size={24} color="white" />
+                    </Pressable>
+                </View>
             </View>
             {getScreen(appScreen)}
         </>
@@ -54,8 +63,8 @@ const styles = StyleSheet.create({
         padding: 25,
         flexDirection: 'row',
         flexWrap: 'wrap',
-        justifyContent: 'space-evenly',
-        alignItems: 'stretch',
+        justifyContent: 'space-around',
+        alignItems: 'center',
         backgroundColor: '#2e3a24'
     },
     button: {
