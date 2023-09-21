@@ -1,14 +1,6 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import i18n from '../../localization/localization'
 import { ABOUT } from '../../content';
-
-const createTextComponents = (text: string, index: number | string, style: object) => {
-            return <Text
-                key={index}
-                style={style}
-            >
-                {text}
-            </Text>
-}
 
 export const About = () => {
     return (
@@ -16,38 +8,56 @@ export const About = () => {
             <ScrollView>
                 <View style={styles.textContainer}>
                     <Text style={styles.title}>
-                        {ABOUT.APP.TITLE}
+                        {i18n.t('APP_NAME')}
                     </Text>
-                    {Object.values(ABOUT.APP).map((value, index) => {
-                        if (typeof value === 'string' && value !== ABOUT.APP.TITLE) {
-                            return createTextComponents(value, index, styles.description);
-                            }
-                        }
-                    )}
+                    <Text style={styles.description}>
+                        {i18n.t('APP_DESCRIPTION')}
+                    </Text>
+                    <Text style={styles.description}>
+                        {i18n.t('APP_AUTHOR')}
+                    </Text>
+                    <Text style={styles.description}>
+                        {ABOUT.APP.VERSION}
+                    </Text>
+                    <Text style={styles.description}>
+                        {ABOUT.APP.DATE}
+                    </Text>
                     <Text style={styles.description}>
                         {ABOUT.APP.LICENSE.SHORT_NAME}
                     </Text>
                     <Text style={styles.title}>
-                        {ABOUT.COVER_IMAGE.TITLE}
+                        {i18n.t('COVER_IMAGE_NAME')}
                     </Text>
-                    {Object.values(ABOUT.COVER_IMAGE).map((value, index) => {
-                        if (typeof value === 'string' && value !== ABOUT.COVER_IMAGE.TITLE) {
-                            return createTextComponents(value, index, styles.description);
-                            }
-                        }
-                    )}
+                    <Text style={styles.description}>
+                        {i18n.t('COVER_IMAGE_DESCRIPTION')}
+                    </Text>
+                    <Text style={styles.description}>
+                        {i18n.t('COVER_IMAGE_AUTHOR')}
+                    </Text>
+                    <Text style={styles.description}>
+                        {i18n.t('COVER_IMAGE_DATE')}
+                    </Text>
+                    <Text style={styles.description}>
+                        {i18n.t('COVER_IMAGE_LOCATION')}
+                    </Text>
                     <Text style={styles.description}>
                         {ABOUT.COVER_IMAGE.LICENSE.SHORT_NAME}
                     </Text>
                     <Text style={styles.title}>
-                        {ABOUT.ICON_IMAGE.TITLE}
+                        {i18n.t('ICON_IMAGE_NAME')}
                     </Text>
-                    {Object.values(ABOUT.ICON_IMAGE).map((value, index) => {
-                        if (typeof value === 'string' && value !== ABOUT.ICON_IMAGE.TITLE) {
-                            return createTextComponents(value, index, styles.description);
-                            }
-                        }
-                    )}
+                    <Text style={styles.description}>
+                        {i18n.t('ICON_IMAGE_DESCRIPTION')}
+                    </Text>
+                    <Text style={styles.description}>
+                        {i18n.t('ICON_IMAGE_AUTHOR')}
+                    </Text>
+                    <Text style={styles.description}>
+                        {i18n.t('ICON_IMAGE_DATE')}
+                    </Text>
+                    <Text style={styles.description}>
+                        {i18n.t('ICON_IMAGE_LOCATION')}
+                    </Text>
                     <Text style={styles.description}>
                         {ABOUT.ICON_IMAGE.LICENSE.SHORT_NAME}
                     </Text>

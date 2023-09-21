@@ -1,17 +1,19 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
+import i18n from '../../localization/localization';
 import { ABOUT } from '../../content';
 
 export const Main = () => {
+
     return (
         <>
             <View style={styles.textContainer}>
-                <Text style={styles.heading}>Glareola</Text>
+                <Text style={styles.heading}>{i18n.t('APP_NAME')}</Text>
                 <Image
                     source={require('../../../assets/images/glareola_pratincola.png')}
                     style={styles.titleImage}
                 ></Image>
-                <Text style={styles.title}>A crawler for rarity observations</Text>
+                <Text style={styles.title}>{i18n.t('APP_DESCRIPTION')}</Text>
                 <Text style={styles.appInfo}>{ABOUT.APP.VERSION}</Text>
             </View>
         </>
@@ -35,6 +37,8 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontWeight: '500',
         fontSize: 22,
+        textAlign: 'center',
+        width: '90%',
     },
     appInfo: {
         color: '#fff',
