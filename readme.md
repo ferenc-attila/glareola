@@ -8,8 +8,10 @@ Collared pratincole (Glareola pratincola) by Saswat Mishra
 
 Glareola is a simple react native application to collect rarity bird
 observation data from web, focusing on Hungary and the nearby countries.
-Currently, it is under development and only crawling data from
-[birding.hu](http://www.birding.hu).
+Currently, it is a proof of concept, under development and only crawling
+the data from [birding.hu](http://www.birding.hu) main page. I hope, there will be an
+opportunity to use the databases behind the website for smoother user
+experience and more functionality.
 
 ## Features
 

@@ -1,0 +1,22 @@
+{
+    "APP_NAME": "Glareola",
+    "APP_DESCRIPTION": "Un crawler pentru observații rare",
+    "APP_AUTHOR": "Attila Ferenc",
+
+    "COVER_IMAGE_NAME": "Imagine de copertă",
+    "COVER_IMAGE_DESCRIPTION": "Ciovlică ruginie (Glareola pratincola)",
+    "COVER_IMAGE_AUTHOR": "Saswat Mishra",
+    "COVER_IMAGE_DATE": "2018-03-30",
+    "COVER_IMAGE_LOCATION": "Nal Sarovar, Gujarat, India",
+
+    "ICON_IMAGE_NAME": "Imagine pictogramă",
+    "ICON_IMAGE_DESCRIPTION": "Ciovlică ruginie (Glareola pratincola) portret",
+    "ICON_IMAGE_AUTHOR": "Ludovic Hirlimann",
+    "ICON_IMAGE_DATE": "2010-05-16",
+    "ICON_IMAGE_LOCATION": "Amboseli Parc Național, Kenya",
+
+    "SETTINGS_SCREEN_TITLE": "Setări",
+    "SETTINGS_SCREEN_DESCRIPTION": "In curand",
+
+    "OBSERVATIONS_SCREEN_TITLE": "Observatii"
+}

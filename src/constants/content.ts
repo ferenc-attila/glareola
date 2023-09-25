@@ -12,13 +12,13 @@ export const ABOUT = {
         LICENSE: {
             SHORT_NAME: 'CC-BY-SA-4.0',
             LINK: 'https://creativecommons.org/licenses/by-sa/4.0/',
-        }
+        },
     },
     ICON_IMAGE: {
         SOURCE: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Glareola_pratincola_in_Ambos%C3%A9lie_National_Park_kenya%2C_crop2.jpg',
         LICENSE: {
             SHORT_NAME: 'CC-BY-SA-3.0',
             LINK: 'https://creativecommons.org/licenses/by-sa/3.0/',
-        }
-    }
-}
+        },
+    },
+};

@@ -7,13 +7,14 @@ import hu_HU from './translations/hu_HU.json';
 import ro_RO from './translations/ro_RO.json';
 import sk_SK from './translations/sk_SK.json';
 
-const locale = getLocales()[0].languageCode;
+const locale = getLocales()?.[0] ? getLocales()[0].languageCode : 'en';
+
 const translations = {
-    en: en_GB,
     de: de_DE,
+    en: en_GB,
     hu: hu_HU,
-    sk: sk_SK,
     ro: ro_RO,
+    sk: sk_SK,
 };
 
 const i18n = new I18n(translations);

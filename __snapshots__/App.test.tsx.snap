@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> App renders correctly 1`] = `
+[
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#2e3a24",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "space-around",
+        "padding": 25,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#4d9460",
+          "borderRadius": 5,
+          "color": "#ffffff",
+          "fontSize": 15,
+          "fontWeight": "bold",
+          "padding": 10,
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+      >
+        <Text />
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "#4d9460",
+          "borderRadius": 5,
+          "color": "#ffffff",
+          "fontSize": 15,
+          "fontWeight": "bold",
+          "padding": 10,
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+      >
+        <Text />
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "#4d9460",
+          "borderRadius": 5,
+          "color": "#ffffff",
+          "fontSize": 15,
+          "fontWeight": "bold",
+          "padding": 10,
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+      >
+        <Text />
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "#4d9460",
+          "borderRadius": 5,
+          "color": "#ffffff",
+          "fontSize": 15,
+          "fontWeight": "bold",
+          "padding": 10,
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+      >
+        <Text />
+      </View>
+    </View>
+  </View>,
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#2e3a24",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#fff",
+          "fontSize": 40,
+          "fontWeight": "900",
+          "paddingBottom": 25,
+        }
+      }
+    >
+      Glareola
+    </Text>
+    <Image
+      source={1}
+      style={
+        {
+          "margin": 30,
+          "maxHeight": "50%",
+          "maxWidth": "90%",
+          "resizeMode": "contain",
+        }
+      }
+    />
+    <Text
+      style={
+        {
+          "color": "#fff",
+          "fontSize": 22,
+          "fontWeight": "500",
+          "textAlign": "center",
+          "width": "90%",
+        }
+      }
+    >
+      A crawler for rarity observations
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#fff",
+          "fontSize": 10,
+          "marginTop": 25,
+        }
+      }
+    >
+      0.0.5
+    </Text>
+  </View>,
+]
+`;

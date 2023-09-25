@@ -1,10 +1,10 @@
 import axios from 'axios';
 import { load } from 'cheerio';
-import getBirdingHuData from './birdingDataExtractor'
-import { IBirdingHuData } from "../../../types/types";
+
+import getBirdingHuData from './birdingDataExtractor';
+import { IBirdingHuData } from '../../../types/types';
 
 export default class BirdingHuExtractor {
-
     private readonly url: string;
 
     constructor(url: string) {
@@ -12,7 +12,9 @@ export default class BirdingHuExtractor {
     }
 
     async getLinks() {
-        const data = await axios.get(this.url).catch(err => {throw err});
+        const data = await axios.get(this.url).catch(err => {
+            throw err;
+        });
         const $ = load(data.data);
         const observationsTable = $('#obstable');
         const formDataLinks: string[] = [];
@@ -42,5 +44,5 @@ export default class BirdingHuExtractor {
                 error: err,
             };
         }
-    };
-};
+    }
+}
