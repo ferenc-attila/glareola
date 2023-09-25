@@ -1,7 +1,8 @@
+import { FontAwesome5 } from '@expo/vector-icons';
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Modal, Image, Pressable } from 'react-native';
-import { FontAwesome5 } from '@expo/vector-icons';
-import { IBirdingHuData } from '../../types/types';
+
+import { IBirdingHuData } from '../../../types/types';
 
 export const Observation = (observationData: IBirdingHuData) => {
     const [modalVisible, setModalVisible] = useState(false);
@@ -23,42 +24,26 @@ export const Observation = (observationData: IBirdingHuData) => {
         <>
             <View style={styles.container}>
                 <View style={styles.observationContainer}>
-                    <Text style={styles.observationHeader}>
-                        {observationData.speciesHun}
-                    </Text>
-                    <Text style={styles.observationBody}>
-                        {observationData.locality}
-                    </Text>
-                    <Text style={styles.observationBody}>
-                        {observationData.county}
-                    </Text>
-                    <Text style={styles.observationBody}>
-                        {observationData.area}
-                    </Text>
-                    <Text style={styles.observationBody}>
-                        {observationData.date}
-                    </Text>
-                    <Text style={styles.observationBody}>
-                        {observationData.individuals}
-                    </Text>
-                    <Text style={styles.observationBody}>
-                        {observationData.observers.join(', ')}
-                    </Text>
-                    {observationData.notes
-                        && <Text style={styles.observationBody}>
-                        {observationData.notes}
-                    </Text>}
-                    {observationData.imageLink
-                        && <View style={styles.button}>
+                    <Text style={styles.observationHeader}>{observationData.speciesHun}</Text>
+                    <Text style={styles.observationBody}>{observationData.locality}</Text>
+                    <Text style={styles.observationBody}>{observationData.county}</Text>
+                    <Text style={styles.observationBody}>{observationData.area}</Text>
+                    <Text style={styles.observationBody}>{observationData.date}</Text>
+                    <Text style={styles.observationBody}>{observationData.individuals}</Text>
+                    <Text style={styles.observationBody}>{observationData.observers.join(', ')}</Text>
+                    {observationData.notes && <Text style={styles.observationBody}>{observationData.notes}</Text>}
+                    {observationData.imageLink && (
+                        <View style={styles.button}>
                             <Pressable onPress={() => setModalContent('image')}>
                                 <FontAwesome5 name='camera' size={24} color='white' />
                             </Pressable>
-                        </View>}
+                        </View>
+                    )}
                 </View>
             </View>
             <Modal
-                animationType="slide"
-                transparent={true}
+                animationType='slide'
+                transparent
                 visible={modalVisible}
                 onRequestClose={() => {
                     setModalVisible(!modalVisible);
@@ -66,12 +51,9 @@ export const Observation = (observationData: IBirdingHuData) => {
             >
                 <View style={styles.modalContainer}>
                     <View style={styles.modal}>
-                        {modalContent == 'image'
-                            && observationData.imageLink
-                            && <Image
-                                style={styles.image}
-                                source={{uri: observationData.imageLink}}
-                            />}
+                        {modalContent === 'image' && observationData.imageLink && (
+                            <Image style={styles.image} source={{ uri: observationData.imageLink }} />
+                        )}
                         <View style={styles.button}>
                             <Pressable onPress={() => setModalVisible(!modalVisible)}>
                                 <FontAwesome5 name='backward' size={24} color='white' />
@@ -119,7 +101,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#4d9460',
         color: '#ffffff',
         fontSize: 15,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
     },
     modalContainer: {
         flex: 1,

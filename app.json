@@ -4,7 +4,7 @@
     "slug": "glareola",
     "version": "0.0.5",
     "githubUrl": "https://github.com/ferenc-attila/glareola",
-    "icon": "./assets/images/glareola_portrait.png",
+    "icon": "./assets/images/glareola_icon.png",
     "userInterfaceStyle": "dark",
     "orientation": "portrait",
     "splash": {
@@ -23,7 +23,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/glareola_portrait.png",
+        "foregroundImage": "./assets/images/glareola_icon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "hu.delheves.glareola"
@@ -36,7 +36,7 @@
       "ro": "./src/localization/translations/ro_RO.json"
     },
     "web": {
-      "favicon": "./assets/images/glareola_portrait.png"
+      "favicon": "./assets/images/glareola_icon.png"
     },
     "extra": {
       "eas": {

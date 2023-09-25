@@ -1,18 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native';
-import i18n from '../../localization/localization'
+
+import i18n from '../../../utils/localization/localization';
 
 export const Settings = () => {
     return (
         <View style={styles.textContainer}>
-            <Text style={styles.title}>
-                {i18n.t('SETTINGS_SCREEN_TITLE')}
-            </Text>
-            <Text style={styles.description}>
-                {i18n.t('SETTINGS_SCREEN_DESCRIPTION')}
-            </Text>
+            <Text style={styles.title}>{i18n.t('SETTINGS_SCREEN_TITLE')}</Text>
+            <Text style={styles.description}>{i18n.t('SETTINGS_SCREEN_DESCRIPTION')}</Text>
         </View>
-    )
-}
+    );
+};
 
 const styles = StyleSheet.create({
     textContainer: {

@@ -1,57 +1,46 @@
 import React, { useState } from 'react';
-import { Pressable, StatusBar, StyleSheet, Text, View } from 'react-native';
+import { StatusBar, StyleSheet, View } from 'react-native';
+
 import 'reflect-metadata';
-import { FontAwesome5 } from '@expo/vector-icons';
-import { Main } from './src/components/Main';
-import { About } from './src/components/About';
-import { ObservationList } from './src/components/ObservationList';
-import { Settings } from './src/components/Settings';
+import { GlareolaButton } from './src/components/Atomic/GlareolaButton';
+import { About } from './src/components/Screen/About';
+import { Main } from './src/components/Screen/Main';
+import { ObservationList } from './src/components/Screen/ObservationList';
+import { Settings } from './src/components/Screen/Settings';
 
 export default function App() {
-
-    const [appScreen, setAppScreen] = useState('main')
+    const [appScreen, setAppScreen] = useState('main');
 
     function getScreen(appScreen: string) {
         switch (appScreen) {
-            case ('main'): {
-                return <Main></Main>
+            case 'main': {
+                return <Main />;
             }
-            case ('about'): {
-                return <About></About>
+            case 'about': {
+                return <About />;
             }
-            case ('observations'): {
-                return <ObservationList></ObservationList>
+            case 'observations': {
+                return <ObservationList />;
             }
-            case ('settings'): {
-                return <Settings></Settings>
+            case 'settings': {
+                return <Settings />;
             }
         }
     }
 
     return (
         <>
-            <StatusBar/>
+            <StatusBar />
             <View style={styles.buttonContainer}>
-                <View style={styles.button}>
-                    <Pressable onPress={() => setAppScreen('main')}>
-                        <FontAwesome5 name='home' size={24} color='white' />
-                    </Pressable>
-                </View>
-                <View style={styles.button}>
-                    <Pressable onPress={() => setAppScreen('observations')}>
-                        <FontAwesome5 name='binoculars' size={24} color='white' />
-                    </Pressable>
-                </View>
-                <View style={styles.button}>
-                    <Pressable onPress={() => setAppScreen('settings')}>
-                        <FontAwesome5 name='tools' size={24} color="white" />
-                    </Pressable>
-                </View>
-                <View style={styles.button}>
-                    <Pressable onPress={() => setAppScreen('about')}>
-                        <FontAwesome5 name="info-circle" size={24} color="white" />
-                    </Pressable>
-                </View>
+                <GlareolaButton onPress={() => setAppScreen('main')} iconName='home' size={24} color='white' />
+                <GlareolaButton
+                    onPress={() => setAppScreen('observations')}
+                    iconName='binoculars'
+                    size={24}
+                    color='white'
+                />
+                <GlareolaButton onPress={() => setAppScreen('settings')} iconName='tools' size={24} color='white' />
+                <GlareolaButton onPress={() => setAppScreen('about')} iconName='info-circle' size={24} color='white' />
             </View>
             {getScreen(appScreen)}
         </>
@@ -65,7 +54,7 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         justifyContent: 'space-around',
         alignItems: 'center',
-        backgroundColor: '#2e3a24'
+        backgroundColor: '#2e3a24',
     },
     button: {
         padding: 10,
@@ -73,6 +62,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#4d9460',
         color: '#ffffff',
         fontSize: 15,
-        fontWeight: 'bold'
-    }
+        fontWeight: 'bold',
+    },
 });
