@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About should render correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#2e3a24",
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#2e3a24",
+            "flex": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 22,
+              "fontWeight": "900",
+              "marginTop": 25,
+              "padding": 10,
+            }
+          }
+        >
+          Glareola
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          A crawler for rarity observations
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          Attila Ferenc
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          0.0.6
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          2023-09-21
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          MIT
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 22,
+              "fontWeight": "900",
+              "marginTop": 25,
+              "padding": 10,
+            }
+          }
+        >
+          Cover Image
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          Collared pratincole (Glareola pratincola)
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          Saswat Mishra
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          2018-03-30
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          Nal Sarovar, Gujarat, India
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          CC-BY-SA-4.0
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 22,
+              "fontWeight": "900",
+              "marginTop": 25,
+              "padding": 10,
+            }
+          }
+        >
+          Icon Image
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          Collared pratincole (Glareola pratincola) portrait
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          Ludovic Hirlimann
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          2010-05-16
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          Amboseli National Park, Kenya
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#fff",
+              "fontSize": 16,
+              "padding": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          CC-BY-SA-3.0
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

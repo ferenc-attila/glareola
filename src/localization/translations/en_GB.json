@@ -3,6 +3,13 @@
     "APP_DESCRIPTION": "A crawler for rarity observations",
     "APP_AUTHOR": "Attila Ferenc",
 
+    "BUTTON_CLOSE_LABEL": "Close button",
+    "BUTTON_IMAGE_LABEL": "Show image button",
+    "BUTTON_SCREEN_ABOUT_LABEL": "About button",
+    "BUTTON_SCREEN_HOME_LABEL": "Home button",
+    "BUTTON_SCREEN_OBSERVATIONS_LABEL": "Observations button",
+    "BUTTON_SCREEN_SETTINGS_LABEL": "Settings button",
+
     "COVER_IMAGE_NAME": "Cover Image",
     "COVER_IMAGE_DESCRIPTION": "Collared pratincole (Glareola pratincola)",
     "COVER_IMAGE_AUTHOR": "Saswat Mishra",
@@ -15,8 +22,12 @@
     "ICON_IMAGE_DATE": "2010-05-16",
     "ICON_IMAGE_LOCATION": "Amboseli National Park, Kenya",
 
-    "SETTINGS_SCREEN_TITLE": "Settings",
-    "SETTINGS_SCREEN_DESCRIPTION": "Coming soon...",
+    "LOADING": "loading",
 
-    "OBSERVATIONS_SCREEN_TITLE": "Observations"
+    "OBSERVATION_IMAGE_DESCRIPTION": "Image created during observation: ",
+
+    "OBSERVATIONS_SCREEN_TITLE": "Observations",
+
+    "SETTINGS_SCREEN_TITLE": "Settings",
+    "SETTINGS_SCREEN_DESCRIPTION": "Coming soon..."
 }

@@ -2,7 +2,7 @@
   "expo": {
     "name": "Glareola",
     "slug": "glareola",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "githubUrl": "https://github.com/ferenc-attila/glareola",
     "icon": "./assets/images/glareola_icon.png",
     "userInterfaceStyle": "dark",

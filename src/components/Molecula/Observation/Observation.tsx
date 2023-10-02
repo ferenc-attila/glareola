@@ -1,8 +1,9 @@
-import { FontAwesome5 } from '@expo/vector-icons';
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, Text, View, Modal, Image, Pressable } from 'react-native';
+import { StyleSheet, Text, View, Modal, Image } from 'react-native';
 
-import { IBirdingHuData } from '../../../types/types';
+import i18n from '../../../localization';
+import { IBirdingHuData } from '../../../types/interfaces';
+import { GlareolaButton } from '../../Atomic/GlareolaButton';
 
 export const Observation = (observationData: IBirdingHuData) => {
     const [modalVisible, setModalVisible] = useState(false);
@@ -33,11 +34,13 @@ export const Observation = (observationData: IBirdingHuData) => {
                     <Text style={styles.observationBody}>{observationData.observers.join(', ')}</Text>
                     {observationData.notes && <Text style={styles.observationBody}>{observationData.notes}</Text>}
                     {observationData.imageLink && (
-                        <View style={styles.button}>
-                            <Pressable onPress={() => setModalContent('image')}>
-                                <FontAwesome5 name='camera' size={24} color='white' />
-                            </Pressable>
-                        </View>
+                        <GlareolaButton
+                            onPress={() => setModalContent('image')}
+                            iconName='camera'
+                            size={24}
+                            color='white'
+                            accessibilityLabel={i18n.t('BUTTON_IMAGE_LABEL')}
+                        />
                     )}
                 </View>
             </View>
@@ -52,13 +55,22 @@ export const Observation = (observationData: IBirdingHuData) => {
                 <View style={styles.modalContainer}>
                     <View style={styles.modal}>
                         {modalContent === 'image' && observationData.imageLink && (
-                            <Image style={styles.image} source={{ uri: observationData.imageLink }} />
+                            <Image
+                                style={styles.image}
+                                source={{ uri: observationData.imageLink }}
+                                accessibilityRole='image'
+                                accessibilityLabel={`${i18n.t('OBSERVATION_IMAGE_DESCRIPTION')} ${
+                                    observationData.speciesSci
+                                }`}
+                            />
                         )}
-                        <View style={styles.button}>
-                            <Pressable onPress={() => setModalVisible(!modalVisible)}>
-                                <FontAwesome5 name='backward' size={24} color='white' />
-                            </Pressable>
-                        </View>
+                        <GlareolaButton
+                            onPress={() => setModalVisible(!modalVisible)}
+                            iconName='backward'
+                            size={24}
+                            color='white'
+                            accessibilityLabel={i18n.t('BUTTON_CLOSE_LABEL')}
+                        />
                     </View>
                 </View>
             </Modal>
@@ -93,15 +105,6 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: '#fff',
         textAlign: 'center',
-    },
-    button: {
-        padding: 10,
-        margin: 10,
-        borderRadius: 5,
-        backgroundColor: '#4d9460',
-        color: '#ffffff',
-        fontSize: 15,
-        fontWeight: 'bold',
     },
     modalContainer: {
         flex: 1,

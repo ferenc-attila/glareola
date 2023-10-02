@@ -48,7 +48,7 @@ to the public.
 
 ### Installing
 
-`nvm use`
+`nvm use`  
 `npm add expo`
 
 ### Versioning

@@ -2,12 +2,17 @@ import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 
 import { ABOUT } from '../../../constants';
-import i18n from '../../../utils/localization/localization';
+import i18n from '../../../localization';
 
-export const Main = () => (
+export const Home = () => (
     <View style={styles.textContainer}>
         <Text style={styles.heading}>{i18n.t('APP_NAME')}</Text>
-        <Image source={require('../../../../assets/images/glareola_pratincola.png')} style={styles.titleImage} />
+        <Image
+            source={require('../../../../assets/images/glareola_pratincola.png')}
+            style={styles.titleImage}
+            accessibilityRole='image'
+            accessibilityLabel={i18n.t('COVER_IMAGE_DESCRIPTION')}
+        />
         <Text style={styles.title}>{i18n.t('APP_DESCRIPTION')}</Text>
         <Text style={styles.appInfo}>{ABOUT.APP.VERSION}</Text>
     </View>

@@ -3,6 +3,13 @@
     "APP_DESCRIPTION": "Madártani megfigyelések",
     "APP_AUTHOR": "Ferenc Attila",
 
+    "BUTTON_CLOSE_LABEL": "Bezárás gomb",
+    "BUTTON_IMAGE_LABEL": "Kép megjelenítése gomb",
+    "BUTTON_SCREEN_ABOUT_LABEL": "About gomb",
+    "BUTTON_SCREEN_HOME_LABEL": "Főképernyő gomb",
+    "BUTTON_SCREEN_OBSERVATIONS_LABEL": "Megfigyelések gomb",
+    "BUTTON_SCREEN_SETTINGS_LABEL": "Beállítások gomb",
+
     "COVER_IMAGE_NAME": "Borítókép",
     "COVER_IMAGE_DESCRIPTION": "Székicsér (Glareola pratincola)",
     "COVER_IMAGE_AUTHOR": "Saswat Mishra",
@@ -15,8 +22,12 @@
     "ICON_IMAGE_DATE": "2010-05-16",
     "ICON_IMAGE_LOCATION": "Amboseli Nemzeti Park, Kenya",
 
-    "SETTINGS_SCREEN_TITLE": "Beállítások",
-    "SETTINGS_SCREEN_DESCRIPTION": "Hamarosan",
+    "LOADING": "betöltés",
 
-    "OBSERVATIONS_SCREEN_TITLE": "Megfigyelések"
+    "OBSERVATION_IMAGE_DESCRIPTION": "A megfigyelés során készült kép: ",
+
+    "OBSERVATIONS_SCREEN_TITLE": "Megfigyelések",
+
+    "SETTINGS_SCREEN_TITLE": "Beállítások",
+    "SETTINGS_SCREEN_DESCRIPTION": "Hamarosan"
 }

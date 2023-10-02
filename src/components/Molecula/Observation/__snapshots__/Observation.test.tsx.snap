@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Observation should render correctly 1`] = `
+[
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#2e3a24",
+        "flex": 1,
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#595947",
+          "borderRadius": 10,
+          "justifyContent": "center",
+          "margin": 10,
+          "padding": 10,
+          "width": "90%",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#fff",
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "padding": 5,
+          }
+        }
+      >
+        Székicsér
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#fff",
+            "fontSize": 16,
+            "textAlign": "center",
+          }
+        }
+      >
+        Budapest
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#fff",
+            "fontSize": 16,
+            "textAlign": "center",
+          }
+        }
+      >
+        Budapest
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#fff",
+            "fontSize": 16,
+            "textAlign": "center",
+          }
+        }
+      >
+        Parlament
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#fff",
+            "fontSize": 16,
+            "textAlign": "center",
+          }
+        }
+      >
+        2021-05-01
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#fff",
+            "fontSize": 16,
+            "textAlign": "center",
+          }
+        }
+      >
+        1
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#fff",
+            "fontSize": 16,
+            "textAlign": "center",
+          }
+        }
+      >
+        John Doe, Jane Doe
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#fff",
+            "fontSize": 16,
+            "textAlign": "center",
+          }
+        }
+      >
+        Some comment
+      </Text>
+      <View
+        style={
+          {
+            "backgroundColor": "#4d9460",
+            "borderRadius": 5,
+            "color": "#ffffff",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "margin": 10,
+            "padding": 10,
+          }
+        }
+      >
+        <View
+          accessibilityLabel="Show image button"
+          accessibilityRole="button"
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+        >
+          <Text />
+        </View>
+      </View>
+    </View>
+  </View>,
+  <Modal
+    animationType="slide"
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    transparent={true}
+    visible={false}
+  />,
+]
+`;

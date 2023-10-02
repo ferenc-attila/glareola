@@ -3,6 +3,13 @@
     "APP_DESCRIPTION": "Ein Crawler für Seltenheitsbeobachtungen",
     "APP_AUTHOR": "Attila Ferenc",
 
+    "BUTTON_CLOSE_LABEL": "Schaltfläche „Schließen“",
+    "BUTTON_IMAGE_LABEL": "Schaltfläche „Bild anzeigen“",
+    "BUTTON_SCREEN_ABOUT_LABEL": "Schaltfläche „Über“",
+    "BUTTON_SCREEN_HOME_LABEL": "Hauptbildschirm-Taste",
+    "BUTTON_SCREEN_OBSERVATIONS_LABEL": "Schaltfläche „Beobachtungen“",
+    "BUTTON_SCREEN_SETTINGS_LABEL": "Schaltfläche „Einstellungen“",
+
     "COVER_IMAGE_NAME": "Titelbild",
     "COVER_IMAGE_DESCRIPTION": "Rotflügel-Brachschwalbe (Glareola pratincola)",
     "COVER_IMAGE_AUTHOR": "Saswat Mishra",
@@ -15,8 +22,12 @@
     "ICON_IMAGE_DATE": "2010-05-16",
     "ICON_IMAGE_LOCATION": "Amboseli Nationalpark, Kenia",
 
-    "SETTINGS_SCREEN_TITLE": "Einstellungen",
-    "SETTINGS_SCREEN_DESCRIPTION": "Demnächst",
+    "LOADING": "Wird geladen",
 
-    "OBSERVATIONS_SCREEN_TITLE": "Beobachtungen"
+    "OBSERVATION_IMAGE_DESCRIPTION": "Bild, das während der Beobachtung erstellt wurde: ",
+
+    "OBSERVATIONS_SCREEN_TITLE": "Beobachtungen",
+
+    "SETTINGS_SCREEN_TITLE": "Einstellungen",
+    "SETTINGS_SCREEN_DESCRIPTION": "Demnächst"
 }

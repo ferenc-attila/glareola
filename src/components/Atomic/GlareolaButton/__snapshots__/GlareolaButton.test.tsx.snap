@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GlareolaButton renders correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#4d9460",
+      "borderRadius": 5,
+      "color": "#ffffff",
+      "fontSize": 15,
+      "fontWeight": "bold",
+      "margin": 10,
+      "padding": 10,
+    }
+  }
+>
+  <View
+    accessibilityLabel="testLabel"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+  >
+    <Text />
+  </View>
+</View>
+`;

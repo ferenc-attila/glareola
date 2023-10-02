@@ -21,9 +21,21 @@ export interface IGlareolaButton {
     iconName: string;
     size: number;
     color: string;
+    accessibilityLabel: string;
 }
 
-export interface IErrorMessage {
+export interface IError {
     message: string;
     error?: Error;
+}
+
+export interface IObservationListData {
+    url: string;
+    isLoading: boolean;
+    error: string;
+    data?: IBirdingHuData[];
+}
+
+export interface IObservationListProps {
+    url: string;
 }
