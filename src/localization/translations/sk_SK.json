@@ -3,6 +3,13 @@
     "APP_DESCRIPTION": "Pásový prehľadávač na pozorovanie rarity",
     "APP_AUTHOR": "Attila Ferenc",
 
+    "BUTTON_CLOSE_LABEL": "tlačidlo zavrieť",
+    "BUTTON_IMAGE_LABEL": "tlačidlo zobraziť obrázok",
+    "BUTTON_SCREEN_ABOUT_LABEL": "o tlačidle",
+    "BUTTON_SCREEN_HOME_LABEL": "tlačidlo hlavnej obrazovky",
+    "BUTTON_SCREEN_OBSERVATIONS_LABEL": "tlačidlo pozorovania",
+    "BUTTON_SCREEN_SETTINGS_LABEL": "tlačidlo nastavení",
+
     "COVER_IMAGE_NAME": "Titulný obrázok",
     "COVER_IMAGE_DESCRIPTION": "Prieložník stepný (Glareola pratincola)",
     "COVER_IMAGE_AUTHOR": "Saswat Mishra",
@@ -15,8 +22,8 @@
     "ICON_IMAGE_DATE": "2010-05-16",
     "ICON_IMAGE_LOCATION": "Amboseli Národný Park, Keňa",
 
-    "SETTINGS_SCREEN_TITLE": "Nastavenie",
-    "SETTINGS_SCREEN_DESCRIPTION": "Už čoskoro",
+    "LOADING": "načítava",
 
-    "OBSERVATIONS_SCREEN_TITLE": "Pozorovania"
+    "SETTINGS_SCREEN_TITLE": "Nastavenie",
+    "SETTINGS_SCREEN_DESCRIPTION": "Už čoskoro"
 }

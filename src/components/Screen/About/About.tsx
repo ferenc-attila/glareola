@@ -1,7 +1,7 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import { ABOUT } from '../../../constants';
-import i18n from '../../../utils/localization/localization';
+import i18n from '../../../localization';
 
 export const About = () => {
     return (

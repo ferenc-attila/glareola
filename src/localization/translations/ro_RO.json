@@ -3,6 +3,13 @@
     "APP_DESCRIPTION": "Un crawler pentru observații rare",
     "APP_AUTHOR": "Attila Ferenc",
 
+    "BUTTON_CLOSE_LABEL": "butonul de închidere",
+    "BUTTON_IMAGE_LABEL": "butonul Afișare imagine",
+    "BUTTON_SCREEN_ABOUT_LABEL": "despre butonul",
+    "BUTTON_SCREEN_HOME_LABEL": "butonul de pe ecranul principal",
+    "BUTTON_SCREEN_OBSERVATIONS_LABEL": "butonul de observații",
+    "BUTTON_SCREEN_SETTINGS_LABEL": "butonul de setări",
+
     "COVER_IMAGE_NAME": "Imagine de copertă",
     "COVER_IMAGE_DESCRIPTION": "Ciovlică ruginie (Glareola pratincola)",
     "COVER_IMAGE_AUTHOR": "Saswat Mishra",
@@ -15,8 +22,12 @@
     "ICON_IMAGE_DATE": "2010-05-16",
     "ICON_IMAGE_LOCATION": "Amboseli Parc Național, Kenya",
 
-    "SETTINGS_SCREEN_TITLE": "Setări",
-    "SETTINGS_SCREEN_DESCRIPTION": "In curand",
+    "LOADING": "Se încarcă",
 
-    "OBSERVATIONS_SCREEN_TITLE": "Observatii"
+    "OBSERVATION_IMAGE_DESCRIPTION": "Imagine creată în timpul observării: ",
+
+    "OBSERVATIONS_SCREEN_TITLE": "Observatii",
+
+    "SETTINGS_SCREEN_TITLE": "Setări",
+    "SETTINGS_SCREEN_DESCRIPTION": "In curand"
 }

@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#2e3a24",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#fff",
+        "fontSize": 40,
+        "fontWeight": "900",
+        "paddingBottom": 25,
+      }
+    }
+  >
+    Glareola
+  </Text>
+  <Image
+    accessibilityLabel="Collared pratincole (Glareola pratincola)"
+    accessibilityRole="image"
+    source={1}
+    style={
+      {
+        "margin": 30,
+        "maxHeight": "50%",
+        "maxWidth": "90%",
+        "resizeMode": "contain",
+      }
+    }
+  />
+  <Text
+    style={
+      {
+        "color": "#fff",
+        "fontSize": 22,
+        "fontWeight": "500",
+        "textAlign": "center",
+        "width": "90%",
+      }
+    }
+  >
+    A crawler for rarity observations
+  </Text>
+  <Text
+    style={
+      {
+        "color": "#fff",
+        "fontSize": 10,
+        "marginTop": 25,
+      }
+    }
+  >
+    0.0.6
+  </Text>
+</View>
+`;

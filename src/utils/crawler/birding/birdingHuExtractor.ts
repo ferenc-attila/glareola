@@ -1,8 +1,10 @@
+// This file is removed from test coverage checking because it is hard to test, and it will not be used in production.
+
 import axios from 'axios';
 import { load } from 'cheerio';
 
-import getBirdingHuData from './birdingDataExtractor';
-import { IBirdingHuData } from '../../../types/types';
+import getBirdingHuData, { fetchBirdingHuData } from './birdingDataExtractor';
+import { IBirdingHuData } from '../../../types/interfaces';
 
 export default class BirdingHuExtractor {
     private readonly url: string;
@@ -35,14 +37,12 @@ export default class BirdingHuExtractor {
             const formDataLinks = await this.getLinks();
             const birdingData = [] as IBirdingHuData[];
             for (const url of formDataLinks) {
-                birdingData.push(await getBirdingHuData(url));
+                const html = await fetchBirdingHuData(url);
+                birdingData.push(getBirdingHuData(html, url));
             }
             return birdingData;
-        } catch (err) {
-            return {
-                message: 'Error while extracting data from birding.hu',
-                error: err,
-            };
+        } catch (error) {
+            throw error;
         }
     }
 }

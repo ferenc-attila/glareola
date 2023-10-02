@@ -1,6 +1,6 @@
 export const ABOUT = {
     APP: {
-        VERSION: '0.0.5',
+        VERSION: '0.0.6',
         DATE: '2023-09-21',
         LICENSE: {
             SHORT_NAME: 'MIT',

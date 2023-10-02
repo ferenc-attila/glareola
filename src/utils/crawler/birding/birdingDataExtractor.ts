@@ -2,13 +2,21 @@ import axios from 'axios';
 import { load } from 'cheerio';
 
 import { SOURCES } from '../../../constants';
-import { IBirdingHuData } from '../../../types/types';
+import { IBirdingHuData } from '../../../types/interfaces';
 
-export default async function getBirdingHuData(url: string): Promise<IBirdingHuData> {
-    const data = await axios.get(url).catch(err => {
-        throw err;
-    });
-    const $ = load(data.data);
+export const fetchBirdingHuData = async (url: string) => {
+    return await axios
+        .get(url)
+        .then(response => {
+            return response.data;
+        })
+        .catch(error => {
+            throw error;
+        });
+};
+
+export default function getBirdingHuData(data: string, url: string): IBirdingHuData {
+    const $ = load(data);
     const formTable = $('.formtable');
     const species = formTable.find('tr').eq(1).find('td').eq(1).text().trim();
     const location = formTable.find('tr').eq(3).find('td').eq(1).text().trim();
@@ -17,9 +25,9 @@ export default async function getBirdingHuData(url: string): Promise<IBirdingHuD
     return {
         source: SOURCES.BIRDING_HU,
         webId: parseInt(url.split('/').pop() as string, 10),
-        date: formTable.find('tr').eq(0).find('td').eq(1).text().trim(),
-        speciesHun: species.split(' - ')[0].trim(),
-        speciesSci: species.split(' - ')[1].trim(),
+        date: formTable.find('tr').eq(0).find('td').eq(1).text().trim(), // TODO: convert to standard date
+        speciesHun: species.split(' - ')[0].trim().replace(/\s+/g, ' '),
+        speciesSci: species.split(' - ')[1].trim().replace(/\s+/g, ' '),
         individuals: parseInt(formTable.find('tr').eq(2).find('td').eq(1).text().trim(), 10),
         locality: location.split(', ')[0].trim(),
         county: location.split(', ').length > 1 ? location.split(', ')[1].trim() : '',

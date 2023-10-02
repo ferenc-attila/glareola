@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import i18n from '../../../utils/localization/localization';
+import i18n from '../../../localization';
 
 export const Settings = () => {
     return (

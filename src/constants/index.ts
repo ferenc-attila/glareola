@@ -1,2 +1,2 @@
 export { ABOUT } from './content';
-export { SOURCES } from './constants';
+export { SOURCES, URLS } from './constants';
