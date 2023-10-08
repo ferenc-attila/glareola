@@ -24,7 +24,7 @@ describe('App', () => {
         });
 
         test.skip('loading the Observations screen when observations button pressed', async () => {
-            // TODO: Refactor the code so that the url could be come from settings, or .env file. We need state management to do this.
+            // TODO: Refactor the code so that the url could come from settings, or .env file. We need state management to do this.
             const container = render(<App />);
             const observationsButton = container.getByLabelText('Observations button');
             await waitFor(() => fireEvent.press(observationsButton), { timeout: 3000 });

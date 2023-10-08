@@ -1,5 +1,5 @@
-import { SOURCES } from '../../../../constants';
-import { IBirdingHuData } from '../../../../types/interfaces';
+import { SOURCES } from '../../../../../constants';
+import { IBirdingHuData } from '../../../../../types/interfaces';
 
 export const mockBirdingHuData: IBirdingHuData = {
     source: SOURCES.BIRDING_HU,
@@ -16,5 +16,5 @@ export const mockBirdingHuData: IBirdingHuData = {
     observers: ['John Doe', 'Jane Doe'],
     uploader: 'John Doe',
     notes: 'Some comment',
-    imageLink: 'assets/images/glareola_pratincola.png',
+    imageLink: '../src/assets/images/glareola_pratincola.png',
 };

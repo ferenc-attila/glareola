@@ -2,6 +2,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import React from 'react';
 import { View, Pressable, StyleSheet } from 'react-native';
 
+import { colors, paddingsAndMargins } from '../../../styles';
 import { IGlareolaButton } from '../../../types/interfaces';
 
 export const GlareolaButton = (props: IGlareolaButton) => {
@@ -16,12 +17,10 @@ export const GlareolaButton = (props: IGlareolaButton) => {
 
 const styles = StyleSheet.create({
     button: {
-        margin: 10,
-        padding: 10,
-        borderRadius: 5,
-        backgroundColor: '#4d9460',
-        color: '#ffffff',
-        fontSize: 15,
-        fontWeight: 'bold',
+        margin: paddingsAndMargins.small,
+        padding: paddingsAndMargins.medium,
+        borderRadius: paddingsAndMargins.small,
+        backgroundColor: colors.background.button,
+        color: colors.font.normal,
     },
 });

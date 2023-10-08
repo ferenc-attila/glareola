@@ -24,10 +24,12 @@
 
     "LOADING": "Wird geladen",
 
+    "MESSAGE_ERROR_NETWORK": "Etwas ist schief gelaufen. Überprüfen Sie die Internetverbindung oder versuchen Sie es später noch einmal!",
+
     "OBSERVATION_IMAGE_DESCRIPTION": "Bild, das während der Beobachtung erstellt wurde: ",
 
-    "OBSERVATIONS_SCREEN_TITLE": "Beobachtungen",
-
-    "SETTINGS_SCREEN_TITLE": "Einstellungen",
-    "SETTINGS_SCREEN_DESCRIPTION": "Demnächst"
+    "SCREEN_ABOUT_TITLE": "Über die Bewerbung",
+    "SCREEN_OBSERVATIONS_TITLE": "Beobachtungen",
+    "SCREEN_SETTINGS_TITLE": "Einstellungen",
+    "SCREEN_SETTINGS_DESCRIPTION": "Demnächst"
 }

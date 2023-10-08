@@ -24,10 +24,12 @@
 
     "LOADING": "loading",
 
+    "MESSAGE_ERROR_NETWORK": "Something went wrong. Check the internet connection or try again later!",
+
     "OBSERVATION_IMAGE_DESCRIPTION": "Image created during observation: ",
 
-    "OBSERVATIONS_SCREEN_TITLE": "Observations",
-
-    "SETTINGS_SCREEN_TITLE": "Settings",
-    "SETTINGS_SCREEN_DESCRIPTION": "Coming soon..."
+    "SCREEN_ABOUT_TITLE": "About",
+    "SCREEN_OBSERVATIONS_TITLE": "Observations",
+    "SCREEN_SETTINGS_TITLE": "Settings",
+    "SCREEN_SETTINGS_DESCRIPTION": "Coming soon..."
 }

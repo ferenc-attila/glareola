@@ -1,6 +1,6 @@
 import { testObservation } from './__fixtures__/testObservation';
 import getBirdingHuData from './birdingDataExtractor';
-import { htmlString } from '../../../__fixtures__/htmlString';
+import { htmlString } from '../../../../__fixtures__/htmlString';
 
 describe('birdingDataExtractor', () => {
     test('getBirdingHuData converts correctly', () => {

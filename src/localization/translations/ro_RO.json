@@ -24,10 +24,12 @@
 
     "LOADING": "Se încarcă",
 
+    "MESSAGE_ERROR_NETWORK": "Ceva n-a mers bine. Verificați conexiunea la internet sau încercați din nou mai târziu!",
+
     "OBSERVATION_IMAGE_DESCRIPTION": "Imagine creată în timpul observării: ",
 
-    "OBSERVATIONS_SCREEN_TITLE": "Observatii",
-
-    "SETTINGS_SCREEN_TITLE": "Setări",
-    "SETTINGS_SCREEN_DESCRIPTION": "In curand"
+    "SCREEN_ABOUT_TITLE": "Despre aplicație",
+    "SCREEN_OBSERVATIONS_TITLE": "Observatii",
+    "SCREEN_SETTINGS_TITLE": "Setări",
+    "SCREEN_SETTINGS_DESCRIPTION": "In curand"
 }

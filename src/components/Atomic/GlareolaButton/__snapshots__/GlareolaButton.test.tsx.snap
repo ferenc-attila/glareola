@@ -6,10 +6,8 @@ exports[`GlareolaButton renders correctly 1`] = `
     {
       "backgroundColor": "#4d9460",
       "borderRadius": 5,
-      "color": "#ffffff",
-      "fontSize": 15,
-      "fontWeight": "bold",
-      "margin": 10,
+      "color": "#fff",
+      "margin": 5,
       "padding": 10,
     }
   }

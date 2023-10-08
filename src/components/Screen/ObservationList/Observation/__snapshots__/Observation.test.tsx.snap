@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Observation should render correctly 1`] = `
+[
+  <View
+    style={
+      {
+        "alignContent": "center",
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "#595947",
+        "borderRadius": 10,
+        "margin": 10,
+        "padding": 10,
+        "width": "90%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#fff",
+          "fontSize": 18,
+          "fontWeight": "700",
+          "padding": 10,
+          "textAlign": "center",
+          "textAlignVertical": "bottom",
+        }
+      }
+    >
+      Székicsér
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#fff",
+          "fontSize": 14,
+          "fontWeight": "500",
+        }
+      }
+    >
+      Budapest
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#fff",
+          "fontSize": 14,
+          "fontWeight": "500",
+        }
+      }
+    >
+      Budapest
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#fff",
+          "fontSize": 14,
+          "fontWeight": "500",
+        }
+      }
+    >
+      Parlament
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#fff",
+          "fontSize": 14,
+          "fontWeight": "500",
+        }
+      }
+    >
+      2021-05-01
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#fff",
+          "fontSize": 14,
+          "fontWeight": "500",
+        }
+      }
+    >
+      1
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#fff",
+          "fontSize": 14,
+          "fontWeight": "500",
+        }
+      }
+    >
+      John Doe, Jane Doe
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#fff",
+          "fontSize": 14,
+          "fontWeight": "500",
+          "marginBottom": 10,
+        }
+      }
+    >
+      Some comment
+    </Text>
+    <View
+      style={
+        {
+          "backgroundColor": "#4d9460",
+          "borderRadius": 5,
+          "color": "#fff",
+          "margin": 5,
+          "padding": 10,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Show image button"
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+      >
+        <Text />
+      </View>
+    </View>
+  </View>,
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    style={
+      {
+        "padding": 15,
+      }
+    }
+    transparent={true}
+    visible={false}
+  />,
+]
+`;
