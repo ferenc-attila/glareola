@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 
+import i18n from '../localization';
 import { IBirdingHuData, IObservationListData } from '../types/interfaces';
 import BirdingHuExtractor from '../utils/crawler/birding/birdingHuExtractor';
 
@@ -19,7 +20,7 @@ export const useFetchData = (url: string) => {
                 setIsLoading(false);
             })
             .catch(() => {
-                setError('Something went wrong, try again later'); // TODO: add i18n text here
+                setError(i18n.t('MESSAGE_ERROR_NETWORK'));
                 setIsLoading(false);
             });
     }, [url]);

@@ -146,7 +146,7 @@ export const htmlString: string = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 
                                     </script>
 
                                 </td>
-                                <td width="240" valign="top" align="center"><a class="thickbox" href="../../assets/images/glareola_pratincola.png"><img src="../../assets/images/glareola_pratincola.png" border="0"></a>						<br>
+                                <td width="240" valign="top" align="center"><a class="thickbox" href="../src/assets/images/glareola_pratincola.png"><img src="../src/assets/images/glareola_pratincola.png" border="0"></a>						<br>
 							<a href="http://www.birding.hu/kepertekeles/00000" class="Bordo">Értékelés:</a> 5/5
 
 						 <a href="http://www.birding.hu/kepertekeles/00000" class="Bordo">Kommentek száma:</a> 0

@@ -1,38 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Settings page should render correctly 1`] = `
-<View
+<Text
   style={
     {
-      "alignItems": "center",
-      "backgroundColor": "#2e3a24",
-      "flex": 1,
-      "justifyContent": "center",
+      "color": "#fff",
+      "fontSize": 14,
+      "fontWeight": "500",
     }
   }
 >
-  <Text
-    style={
-      {
-        "color": "#fff",
-        "fontSize": 22,
-        "fontWeight": "900",
-        "padding": 10,
-      }
-    }
-  >
-    Settings
-  </Text>
-  <Text
-    style={
-      {
-        "color": "#fff",
-        "fontSize": 16,
-        "fontWeight": "400",
-      }
-    }
-  >
-    Coming soon...
-  </Text>
-</View>
+  Coming soon...
+</Text>
 `;

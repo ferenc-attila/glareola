@@ -24,6 +24,12 @@
 
     "LOADING": "načítava",
 
-    "SETTINGS_SCREEN_TITLE": "Nastavenie",
-    "SETTINGS_SCREEN_DESCRIPTION": "Už čoskoro"
+    "MESSAGE_ERROR_NETWORK": "Niečo sa pokazilo. Skontrolujte internetové pripojenie alebo to skúste znova neskôr!",
+
+    "OBSERVATION_IMAGE_DESCRIPTION": "Obrázok vytvorený počas pozorovania: ",
+
+    "SCREEN_ABOUT_TITLE": "O aplikácii",
+    "SCREEN_OBSERVATIONS_TITLE": "Pozorovania",
+    "SCREEN_SETTINGS_TITLE": "Nastavenie",
+    "SCREEN_SETTINGS_DESCRIPTION": "Už čoskoro"
 }

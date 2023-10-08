@@ -24,10 +24,12 @@
 
     "LOADING": "betöltés",
 
+    "MESSAGE_ERROR_NETWORK": "Hiba történt! Ellenőrizd a hálózati kapcsolatot, vagy próbáld meg később!",
+
     "OBSERVATION_IMAGE_DESCRIPTION": "A megfigyelés során készült kép: ",
 
-    "OBSERVATIONS_SCREEN_TITLE": "Megfigyelések",
-
-    "SETTINGS_SCREEN_TITLE": "Beállítások",
-    "SETTINGS_SCREEN_DESCRIPTION": "Hamarosan"
+    "SCREEN_ABOUT_TITLE": "Az alkalmazásról",
+    "SCREEN_OBSERVATIONS_TITLE": "Megfigyelések",
+    "SCREEN_SETTINGS_TITLE": "Beállítások",
+    "SCREEN_SETTINGS_DESCRIPTION": "Hamarosan"
 }

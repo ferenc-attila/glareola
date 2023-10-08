@@ -15,5 +15,5 @@ export const testObservation: IBirdingHuData = {
     notes: 'Testing data',
     latitude: 47.927998,
     longitude: 20.410659,
-    imageLink: '../../assets/images/glareola_pratincola.png',
+    imageLink: '../src/assets/images/glareola_pratincola.png',
 };
