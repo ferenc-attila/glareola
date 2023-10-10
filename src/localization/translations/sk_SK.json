@@ -9,6 +9,8 @@
     "BUTTON_SCREEN_HOME_LABEL": "tlačidlo hlavnej obrazovky",
     "BUTTON_SCREEN_OBSERVATIONS_LABEL": "tlačidlo pozorovania",
     "BUTTON_SCREEN_SETTINGS_LABEL": "tlačidlo nastavení",
+    "BUTTON_OBSERVATION_INFO_LABEL": "Otvorte podrobnosti pozorovania",
+    "BUTTON_OBSERVATION_MAP_LABEL": "Otvorte mapovú aplikáciu v mieste",
 
     "COVER_IMAGE_NAME": "Titulný obrázok",
     "COVER_IMAGE_DESCRIPTION": "Prieložník stepný (Glareola pratincola)",

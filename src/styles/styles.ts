@@ -1,72 +1,72 @@
 import { IFontStyle, ITextStyle } from '../types/interfaces';
 
-export const paddingsAndMargins = {
-    small: 5,
-    medium: 10,
-    large: 15,
+export const SPACING = {
+    SMALL: 5,
+    MEDIUM: 10,
+    LARGE: 15,
 };
 
-export const fontSizes = {
-    small: {
+export const FONT_SIZES = {
+    SMALL: {
         fontSize: 10,
         fontWeight: '300',
     } as IFontStyle,
-    medium: {
+    MEDIUM: {
         fontSize: 14,
         fontWeight: '500',
     } as IFontStyle,
-    large: {
+    LARGE: {
         fontSize: 18,
         fontWeight: '700',
     } as IFontStyle,
-    huge: {
+    HUGE: {
         fontSize: 22,
         fontWeight: '900',
     } as IFontStyle,
 };
 
-export const colors = {
-    font: {
-        normal: '#fff',
-        error: '#ffd500',
+export const COLORS = {
+    FONT: {
+        NORMAL: '#fff',
+        ERROR: '#ffd500',
     },
-    background: {
-        button: '#4d9460',
-        data: '#595947',
-        error: '#af604e',
-        footer: '#464f3c',
-        main: '#2e3a24',
+    BACKGROUND: {
+        BUTTON: '#4d9460',
+        DATA: '#595947',
+        ERROR: '#af604e',
+        FOOTER: '#464f3c',
+        MAIN: '#2e3a24',
     },
 };
 
-export const textStyles = {
-    screenTitleText: {
-        ...fontSizes.huge,
-        color: colors.font.normal,
+export const TEXT_STYLES = {
+    SCREEN_TITLE: {
+        ...FONT_SIZES.HUGE,
+        color: COLORS.FONT.NORMAL,
         textAlign: 'center',
         textAlignVertical: 'center',
-        padding: paddingsAndMargins.large,
+        padding: SPACING.LARGE,
     } as ITextStyle,
-    sectionTitleText: {
-        ...fontSizes.large,
-        color: colors.font.normal,
-        padding: paddingsAndMargins.medium,
+    SECTION_TITLE: {
+        ...FONT_SIZES.LARGE,
+        color: COLORS.FONT.NORMAL,
+        padding: SPACING.MEDIUM,
         textAlign: 'center',
         textAlignVertical: 'bottom',
     } as ITextStyle,
-    commonText: {
-        ...fontSizes.medium,
-        color: colors.font.normal,
+    COMMON: {
+        ...FONT_SIZES.MEDIUM,
+        color: COLORS.FONT.NORMAL,
     } as ITextStyle,
-    smallText: {
-        ...fontSizes.small,
-        color: colors.font.normal,
+    SMALL: {
+        ...FONT_SIZES.SMALL,
+        color: COLORS.FONT.NORMAL,
     } as ITextStyle,
-    errorText: {
-        ...fontSizes.medium,
-        color: colors.font.error,
-        padding: paddingsAndMargins.medium,
-        margin: paddingsAndMargins.medium,
+    ERROR: {
+        ...FONT_SIZES.MEDIUM,
+        color: COLORS.FONT.ERROR,
+        padding: SPACING.MEDIUM,
+        margin: SPACING.MEDIUM,
         textAlign: 'center',
     } as ITextStyle,
 };

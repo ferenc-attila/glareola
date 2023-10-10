@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, Text, View, Modal, Image } from 'react-native';
+import { StyleSheet, Text, View, Modal, Image, Linking, Platform } from 'react-native';
 
+import { ICON_NAMES } from '../../../../constants';
 import i18n from '../../../../localization';
-import { colors, paddingsAndMargins, textStyles } from '../../../../styles';
+import { COLORS, SPACING, TEXT_STYLES } from '../../../../styles';
 import { IBirdingHuData } from '../../../../types/interfaces';
 import { GlareolaButton } from '../../../Atomic/GlareolaButton';
 
@@ -22,6 +23,23 @@ export const Observation = (observationData: IBirdingHuData) => {
         }
     }, [modalContent]);
 
+    const openObservationDetails = async (url: string) => {
+        await Linking.openURL(url);
+    };
+
+    const openMapApplication = async () => {
+        const scheme = Platform.select({ ios: 'maps://0,0?q=', android: 'geo:0,0?q=' });
+        const latLng = `${observationData.latitude},${observationData.longitude}`;
+        const label = observationData.speciesHun ?? observationData.speciesSci;
+        const url = Platform.select({
+            ios: `${scheme}${label}@${latLng}`,
+            android: `${scheme}${latLng}(${label})`,
+        });
+        if (typeof url === 'string') {
+            await Linking.openURL(url);
+        }
+    };
+
     return (
         <>
             <View style={styles.observationContainer}>
@@ -39,22 +57,27 @@ export const Observation = (observationData: IBirdingHuData) => {
                 ) : (
                     <Text style={styles.lastCommonText}>{observationData.observers.join(', ')}</Text>
                 )}
-                {observationData.imageLink ? (
+                <View style={styles.observationButtonContainer}>
                     <GlareolaButton
-                        onPress={() => setModalContent('image')}
-                        iconName='camera'
-                        size={32}
-                        color='white'
-                        accessibilityLabel={i18n.t('BUTTON_IMAGE_LABEL')}
+                        onPress={() => openObservationDetails(observationData.details)}
+                        iconName={ICON_NAMES.INFO}
+                        accessibilityLabel={i18n.t('BUTTON_OBSERVATION_INFO_LABEL')}
                     />
-                ) : null}
+                    <GlareolaButton
+                        onPress={openMapApplication}
+                        iconName={ICON_NAMES.MAP}
+                        accessibilityLabel={i18n.t('BUTTON_OBSERVATION_MAP_LABEL')}
+                    />
+                    {observationData.imageLink ? (
+                        <GlareolaButton
+                            onPress={() => setModalContent('image')}
+                            iconName={ICON_NAMES.IMAGE}
+                            accessibilityLabel={i18n.t('BUTTON_IMAGE_LABEL')}
+                        />
+                    ) : null}
+                </View>
             </View>
-            <Modal
-                style={{ padding: paddingsAndMargins.large }}
-                animationType='fade'
-                transparent
-                visible={modalVisible}
-            >
+            <Modal style={{ padding: SPACING.LARGE }} animationType='fade' transparent visible={modalVisible}>
                 <View style={styles.modal}>
                     {modalContent === 'image' && !!observationData.imageLink ? (
                         <Image
@@ -68,9 +91,7 @@ export const Observation = (observationData: IBirdingHuData) => {
                     ) : null}
                     <GlareolaButton
                         onPress={() => setModalVisible(!modalVisible)}
-                        iconName='backward'
-                        size={32}
-                        color='white'
+                        iconName={ICON_NAMES.BACK}
                         accessibilityLabel={i18n.t('BUTTON_CLOSE_LABEL')}
                     />
                 </View>
@@ -81,40 +102,45 @@ export const Observation = (observationData: IBirdingHuData) => {
 
 const styles = StyleSheet.create({
     observationContainer: {
-        borderRadius: paddingsAndMargins.medium,
-        backgroundColor: colors.background.data,
+        borderRadius: SPACING.MEDIUM,
+        backgroundColor: COLORS.BACKGROUND.DATA,
         width: '90%',
         alignContent: 'center',
         alignItems: 'center',
         alignSelf: 'center',
-        padding: paddingsAndMargins.medium,
-        margin: paddingsAndMargins.medium,
+        padding: SPACING.MEDIUM,
+        margin: SPACING.MEDIUM,
+    },
+    observationButtonContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
     },
     modal: {
-        backgroundColor: colors.background.data,
-        padding: paddingsAndMargins.large,
-        marginTop: paddingsAndMargins.large,
+        backgroundColor: COLORS.BACKGROUND.DATA,
+        padding: SPACING.LARGE,
+        marginTop: SPACING.LARGE,
         width: '90%',
         height: '90%',
         alignItems: 'center',
         justifyContent: 'space-around',
         alignSelf: 'center',
-        borderRadius: paddingsAndMargins.small,
+        borderRadius: SPACING.SMALL,
     },
     image: {
-        margin: paddingsAndMargins.medium,
+        margin: SPACING.MEDIUM,
         width: '100%',
         height: '90%',
         resizeMode: 'contain',
     },
     sectionTitleText: {
-        ...textStyles.sectionTitleText,
+        ...TEXT_STYLES.SECTION_TITLE,
     },
     commonText: {
-        ...textStyles.commonText,
+        ...TEXT_STYLES.COMMON,
     },
     lastCommonText: {
-        ...textStyles.commonText,
-        marginBottom: paddingsAndMargins.medium,
+        ...TEXT_STYLES.COMMON,
+        marginBottom: SPACING.MEDIUM,
     },
 });

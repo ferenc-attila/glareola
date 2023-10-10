@@ -1,1 +1,1 @@
-export { colors, fontSizes, paddingsAndMargins, textStyles } from './styles';
+export { COLORS, FONT_SIZES, SPACING, TEXT_STYLES } from './styles';

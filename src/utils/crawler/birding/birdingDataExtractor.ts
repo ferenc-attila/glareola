@@ -24,6 +24,7 @@ export default function getBirdingHuData(data: string, url: string): IBirdingHuD
 
     return {
         source: SOURCES.BIRDING_HU,
+        details: url,
         webId: parseInt(url.split('/').pop() as string, 10),
         date: formTable.find('tr').eq(0).find('td').eq(1).text()?.trim(), // TODO: convert to standard date
         speciesHun: species.split(' - ')[0]?.trim().replace(/\s+/g, ' '),

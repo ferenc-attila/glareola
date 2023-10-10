@@ -9,6 +9,8 @@
     "BUTTON_SCREEN_HOME_LABEL": "butonul de pe ecranul principal",
     "BUTTON_SCREEN_OBSERVATIONS_LABEL": "butonul de observații",
     "BUTTON_SCREEN_SETTINGS_LABEL": "butonul de setări",
+    "BUTTON_OBSERVATION_INFO_LABEL": "Deschideți detaliile observațieis",
+    "BUTTON_OBSERVATION_MAP_LABEL": "Deschideți aplicația pentru hărți în locație",
 
     "COVER_IMAGE_NAME": "Imagine de copertă",
     "COVER_IMAGE_DESCRIPTION": "Ciovlică ruginie (Glareola pratincola)",

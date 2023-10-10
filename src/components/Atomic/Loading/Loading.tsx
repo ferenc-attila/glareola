@@ -1,14 +1,14 @@
 import { ActivityIndicator, StyleSheet } from 'react-native';
 
 import i18n from '../../../localization';
-import { colors } from '../../../styles';
+import { COLORS } from '../../../styles';
 
 export const Loading = () => {
     return (
         <ActivityIndicator
             style={styles.loading}
             size='large'
-            color={colors.background.button}
+            color={COLORS.BACKGROUND.BUTTON}
             accessibilityLabel={i18n.t('LOADING')}
         />
     );

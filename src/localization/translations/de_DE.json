@@ -9,6 +9,8 @@
     "BUTTON_SCREEN_HOME_LABEL": "Hauptbildschirm-Taste",
     "BUTTON_SCREEN_OBSERVATIONS_LABEL": "Schaltfläche „Beobachtungen“",
     "BUTTON_SCREEN_SETTINGS_LABEL": "Schaltfläche „Einstellungen“",
+    "BUTTON_OBSERVATION_INFO_LABEL": "Öffnen Sie die Details der Beobachtung",
+    "BUTTON_OBSERVATION_MAP_LABEL": "Öffnen Sie die Kartenanwendung am Standort",
 
     "COVER_IMAGE_NAME": "Titelbild",
     "COVER_IMAGE_DESCRIPTION": "Rotflügel-Brachschwalbe (Glareola pratincola)",

@@ -42,7 +42,7 @@ and [birding.sk](http://www.birding.sk).
 Instead of crawling the data from the web, it is also planned to connect
 to backend services to collect the data, with the page owner's permission.
 It is necessary before deploying the application to the app stores and open
-to the public.
+it to the public.
 
 ## Development
 
@@ -67,7 +67,7 @@ request.
 You also have to set the date in the src/content/content.ts file.
 
 Before creating a pull request, please ensure that all the tests works, the linter
-does not throw error and a build is created successfully.
+does not throw error and a build has been created successfully.
 
 ### Scripts
 
@@ -76,7 +76,7 @@ does not throw error and a build is created successfully.
 
 ## TODO
 
-- [ ] Show the data on a map (it is difficult without Google Maps API key)
+- [x] Show the data on a map
 - [ ] Create adjustable filter by species
 - [ ] Create alerts
 - [x] Design improvements
