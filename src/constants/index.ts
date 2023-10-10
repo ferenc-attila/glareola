@@ -1,2 +1,2 @@
 export { ABOUT } from './content';
-export { SOURCES, URLS } from './constants';
+export { BUTTON_PROPS, ICON_NAMES, SOURCES, URLS } from './constants';

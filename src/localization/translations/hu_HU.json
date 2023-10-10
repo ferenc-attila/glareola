@@ -9,6 +9,8 @@
     "BUTTON_SCREEN_HOME_LABEL": "Főképernyő gomb",
     "BUTTON_SCREEN_OBSERVATIONS_LABEL": "Megfigyelések gomb",
     "BUTTON_SCREEN_SETTINGS_LABEL": "Beállítások gomb",
+    "BUTTON_OBSERVATION_INFO_LABEL": "A megfigyelés részleteinek megnyitása",
+    "BUTTON_OBSERVATION_MAP_LABEL": "A térképalkalmazás megnyitása a helyszínen",
 
     "COVER_IMAGE_NAME": "Borítókép",
     "COVER_IMAGE_DESCRIPTION": "Székicsér (Glareola pratincola)",

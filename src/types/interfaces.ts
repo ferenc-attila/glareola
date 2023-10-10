@@ -2,6 +2,7 @@ import React from 'react';
 
 export interface IBirdingHuData {
     source: string;
+    details: string;
     webId: number;
     date: string;
     speciesHun?: string;
@@ -26,8 +27,8 @@ export interface IScreen {
 export interface IGlareolaButton {
     onPress: () => any;
     iconName: string;
-    size: number;
-    color: string;
+    size?: number;
+    color?: string;
     accessibilityLabel: string;
 }
 

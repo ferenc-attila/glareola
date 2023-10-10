@@ -3,7 +3,7 @@ import { Image, StyleSheet, Text } from 'react-native';
 
 import { ABOUT } from '../../../constants';
 import i18n from '../../../localization';
-import { colors, textStyles } from '../../../styles';
+import { COLORS, TEXT_STYLES } from '../../../styles';
 
 export const Home = () => (
     <>
@@ -22,7 +22,7 @@ export const Home = () => (
 const styles = StyleSheet.create({
     appName: {
         paddingBottom: 25,
-        color: colors.font.normal,
+        color: COLORS.FONT.NORMAL,
         fontWeight: '900',
         fontSize: 40,
     },
@@ -33,9 +33,9 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
     },
     commonText: {
-        ...textStyles.commonText,
+        ...TEXT_STYLES.COMMON,
     },
     smallText: {
-        ...textStyles.smallText,
+        ...TEXT_STYLES.SMALL,
     },
 });

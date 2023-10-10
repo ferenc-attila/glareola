@@ -2,7 +2,7 @@ import { FlatList, StyleSheet, Text, View } from 'react-native';
 
 import { Observation } from './Observation';
 import { useFetchData } from '../../../hooks';
-import { colors, paddingsAndMargins, textStyles } from '../../../styles';
+import { COLORS, SPACING, TEXT_STYLES } from '../../../styles';
 import { IObservationListProps } from '../../../types/interfaces';
 import { Loading } from '../../Atomic/Loading';
 
@@ -32,17 +32,17 @@ export const ObservationList = ({ url }: IObservationListProps) => {
 
 const styles = StyleSheet.create({
     scrollView: {
-        padding: paddingsAndMargins.medium,
+        padding: SPACING.MEDIUM,
     },
     errorContainer: {
         width: '90%',
         alignItems: 'center',
         alignContent: 'center',
         alignSelf: 'center',
-        backgroundColor: colors.background.error,
-        borderRadius: paddingsAndMargins.small,
+        backgroundColor: COLORS.BACKGROUND.ERROR,
+        borderRadius: SPACING.SMALL,
     },
     errorText: {
-        ...textStyles.errorText,
+        ...TEXT_STYLES.ERROR,
     },
 });

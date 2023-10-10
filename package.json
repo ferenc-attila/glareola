@@ -1,6 +1,6 @@
 {
   "name": "glareola",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Web crawler to get the latest bird observations for Hungary",
   "main": "node_modules/expo/AppEntry.js",
   "license": "MIT",
@@ -43,7 +43,7 @@
     "test:update": "jest -u",
     "test:coverage": "jest --coverage=true",
     "ts:check": "tsc",
-    "build:prod": "eas build -p android --profile preview",
+    "build:preview": "eas build -p android --profile preview",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "prepare": "husky install"

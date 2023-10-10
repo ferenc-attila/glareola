@@ -8,9 +8,9 @@ import { About } from './src/components/Screen/About';
 import { Home } from './src/components/Screen/Home';
 import { ObservationList } from './src/components/Screen/ObservationList';
 import { Settings } from './src/components/Screen/Settings';
-import { URLS } from './src/constants';
+import { ICON_NAMES, URLS } from './src/constants';
 import i18n from './src/localization';
-import { colors, paddingsAndMargins } from './src/styles';
+import { COLORS, SPACING } from './src/styles';
 
 export default function App() {
     const url = URLS.BIRDING_HU_MAIN;
@@ -57,36 +57,28 @@ export default function App() {
                 <View style={styles.buttonContainer}>
                     <GlareolaButton
                         onPress={() => setAppScreen('home')}
-                        iconName='home'
-                        size={32}
-                        color='white'
+                        iconName={ICON_NAMES.HOME}
                         accessibilityLabel={i18n.t('BUTTON_SCREEN_HOME_LABEL')}
                     />
                 </View>
                 <View style={styles.buttonContainer}>
                     <GlareolaButton
                         onPress={() => setAppScreen('observations')}
-                        iconName='binoculars'
-                        size={32}
-                        color='white'
+                        iconName={ICON_NAMES.OBSERVATIONS}
                         accessibilityLabel={i18n.t('BUTTON_SCREEN_OBSERVATIONS_LABEL')}
                     />
                 </View>
                 <View style={styles.buttonContainer}>
                     <GlareolaButton
                         onPress={() => setAppScreen('settings')}
-                        iconName='tools'
-                        size={32}
-                        color='white'
+                        iconName={ICON_NAMES.SETTINGS}
                         accessibilityLabel={i18n.t('BUTTON_SCREEN_SETTINGS_LABEL')}
                     />
                 </View>
                 <View style={styles.buttonContainer}>
                     <GlareolaButton
                         onPress={() => setAppScreen('about')}
-                        iconName='info-circle'
-                        size={32}
-                        color='white'
+                        iconName={ICON_NAMES.INFO}
                         accessibilityLabel={i18n.t('BUTTON_SCREEN_ABOUT_LABEL')}
                     />
                 </View>
@@ -98,22 +90,22 @@ export default function App() {
 const styles = StyleSheet.create({
     mainContainer: {
         flex: 6,
-        backgroundColor: colors.background.main,
+        backgroundColor: COLORS.BACKGROUND.MAIN,
         // width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingBottom: paddingsAndMargins.medium,
+        paddingBottom: SPACING.MEDIUM,
     },
     footerContainer: {
         flex: 1,
         flexDirection: 'row',
-        backgroundColor: colors.background.footer,
+        backgroundColor: COLORS.BACKGROUND.FOOTER,
         // width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
     },
     buttonContainer: {
-        padding: paddingsAndMargins.medium,
+        padding: SPACING.MEDIUM,
         flexWrap: 'wrap',
         justifyContent: 'space-around',
         alignItems: 'center',

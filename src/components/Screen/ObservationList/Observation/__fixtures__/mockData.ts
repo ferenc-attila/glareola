@@ -3,6 +3,7 @@ import { IBirdingHuData } from '../../../../../types/interfaces';
 
 export const mockBirdingHuData: IBirdingHuData = {
     source: SOURCES.BIRDING_HU,
+    details: 'http://birding.hu/megfigyeles/adatlap/12345678',
     webId: 1,
     speciesHun: 'Székicsér',
     speciesSci: 'Glareola pratincola',

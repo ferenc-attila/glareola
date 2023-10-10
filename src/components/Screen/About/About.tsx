@@ -2,7 +2,7 @@ import { ScrollView, StyleSheet, Text } from 'react-native';
 
 import { ABOUT } from '../../../constants';
 import i18n from '../../../localization';
-import { textStyles } from '../../../styles';
+import { TEXT_STYLES } from '../../../styles';
 
 export const About = () => {
     return (
@@ -31,9 +31,9 @@ export const About = () => {
 
 const styles = StyleSheet.create({
     sectionTitleText: {
-        ...textStyles.sectionTitleText,
+        ...TEXT_STYLES.SECTION_TITLE,
     },
     commonText: {
-        ...textStyles.commonText,
+        ...TEXT_STYLES.COMMON,
     },
 });

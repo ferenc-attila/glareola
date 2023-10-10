@@ -1,7 +1,7 @@
 import { StyleSheet, Text } from 'react-native';
 
 import i18n from '../../../localization';
-import { textStyles } from '../../../styles';
+import { TEXT_STYLES } from '../../../styles';
 
 export const Settings = () => {
     return <Text style={styles.description}>{i18n.t('SCREEN_SETTINGS_DESCRIPTION')}</Text>;
@@ -9,6 +9,6 @@ export const Settings = () => {
 
 const styles = StyleSheet.create({
     description: {
-        ...textStyles.commonText,
+        ...TEXT_STYLES.COMMON,
     },
 });

@@ -2,6 +2,7 @@ import { IBirdingHuData } from '../../../../types/interfaces';
 
 export const testObservation: IBirdingHuData = {
     source: 'birding.hu',
+    details: 'http://birding.hu/megfigyeles/adatlap/12345678',
     webId: 12345678,
     date: '1935. december 28.',
     speciesHun: 'Mezei veréb',

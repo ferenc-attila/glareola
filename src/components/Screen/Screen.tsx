@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import { colors, textStyles } from '../../styles';
+import { COLORS, TEXT_STYLES } from '../../styles';
 import { IScreen } from '../../types/interfaces';
 
 export const Screen = ({ ...props }: IScreen) => {
@@ -23,9 +23,9 @@ const styles = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
         alignContent: 'center',
-        backgroundColor: colors.background.main,
+        backgroundColor: COLORS.BACKGROUND.MAIN,
     },
     screenTitleText: {
-        ...textStyles.screenTitleText,
+        ...TEXT_STYLES.SCREEN_TITLE,
     },
 });
