@@ -6,6 +6,7 @@
     "BUTTON_CLOSE_LABEL": "butonul de închidere",
     "BUTTON_IMAGE_LABEL": "butonul Afișare imagine",
     "BUTTON_SCREEN_ABOUT_LABEL": "despre butonul",
+    "BUTTON_SCREEN_GALLERY_LABEL": "butonul Galerie",
     "BUTTON_SCREEN_HOME_LABEL": "butonul de pe ecranul principal",
     "BUTTON_SCREEN_OBSERVATIONS_LABEL": "butonul de observații",
     "BUTTON_SCREEN_SETTINGS_LABEL": "butonul de setări",
@@ -18,6 +19,9 @@
     "COVER_IMAGE_DATE": "2018-03-30",
     "COVER_IMAGE_LOCATION": "Nal Sarovar, Gujarat, India",
 
+    "GALLERY_INDEX_IMAGE_DESCRIPTION": "Imagine index",
+    "GALLERY_IMAGE_DESCRIPTION": "Imagine mai mare",
+
     "ICON_IMAGE_NAME": "Imagine pictogramă",
     "ICON_IMAGE_DESCRIPTION": "Ciovlică ruginie (Glareola pratincola) portret",
     "ICON_IMAGE_AUTHOR": "Ludovic Hirlimann",
@@ -28,9 +32,10 @@
 
     "MESSAGE_ERROR_NETWORK": "Ceva n-a mers bine. Verificați conexiunea la internet sau încercați din nou mai târziu!",
 
-    "OBSERVATION_IMAGE_DESCRIPTION": "Imagine creată în timpul observării: ",
+    "OBSERVATION_IMAGE_DESCRIPTION": "Imagine creată în timpul observării:",
 
     "SCREEN_ABOUT_TITLE": "Despre aplicație",
+    "SCREEN_GALLERY_TITLE": "Galerie",
     "SCREEN_OBSERVATIONS_TITLE": "Observatii",
     "SCREEN_SETTINGS_TITLE": "Setări",
     "SCREEN_SETTINGS_DESCRIPTION": "In curand"

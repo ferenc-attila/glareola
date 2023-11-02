@@ -6,6 +6,7 @@
     "BUTTON_CLOSE_LABEL": "tlačidlo zavrieť",
     "BUTTON_IMAGE_LABEL": "tlačidlo zobraziť obrázok",
     "BUTTON_SCREEN_ABOUT_LABEL": "o tlačidle",
+    "BUTTON_SCREEN_GALLERY_LABEL": "tlačidlo Galéria",
     "BUTTON_SCREEN_HOME_LABEL": "tlačidlo hlavnej obrazovky",
     "BUTTON_SCREEN_OBSERVATIONS_LABEL": "tlačidlo pozorovania",
     "BUTTON_SCREEN_SETTINGS_LABEL": "tlačidlo nastavení",
@@ -18,6 +19,9 @@
     "COVER_IMAGE_DATE": "2018-03-30",
     "COVER_IMAGE_LOCATION": "Nal Sarovar, Gujarat, India",
 
+    "GALLERY_INDEX_IMAGE_DESCRIPTION": "Indexový obrázok",
+    "GALLERY_IMAGE_DESCRIPTION": "Väčší obrázok",
+
     "ICON_IMAGE_NAME": "Obrázok ikony",
     "ICON_IMAGE_DESCRIPTION": "Portrét Prieložník stepný (Glareola pratincola)",
     "ICON_IMAGE_AUTHOR": "Ludovic Hirlimann",
@@ -28,9 +32,10 @@
 
     "MESSAGE_ERROR_NETWORK": "Niečo sa pokazilo. Skontrolujte internetové pripojenie alebo to skúste znova neskôr!",
 
-    "OBSERVATION_IMAGE_DESCRIPTION": "Obrázok vytvorený počas pozorovania: ",
+    "OBSERVATION_IMAGE_DESCRIPTION": "Obrázok vytvorený počas pozorovania:",
 
     "SCREEN_ABOUT_TITLE": "O aplikácii",
+    "SCREEN_GALLERY_TITLE": "Galéria",
     "SCREEN_OBSERVATIONS_TITLE": "Pozorovania",
     "SCREEN_SETTINGS_TITLE": "Nastavenie",
     "SCREEN_SETTINGS_DESCRIPTION": "Už čoskoro"

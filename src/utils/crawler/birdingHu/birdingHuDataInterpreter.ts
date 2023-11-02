@@ -1,21 +1,9 @@
-import axios from 'axios';
 import { load } from 'cheerio';
 
 import { SOURCES } from '../../../constants';
 import { IBirdingHuData } from '../../../types/interfaces';
 
-export const fetchBirdingHuData = async (url: string) => {
-    return await axios
-        .get(url)
-        .then(response => {
-            return response.data;
-        })
-        .catch(error => {
-            throw error;
-        });
-};
-
-export default function getBirdingHuData(data: string, url: string): IBirdingHuData {
+export const interpretBirdingHuData = (data: string, url: string): IBirdingHuData => {
     const $ = load(data);
     const formTable = $('.formtable');
     const species = formTable.find('tr').eq(1).find('td').eq(1).text().trim();
@@ -36,9 +24,9 @@ export default function getBirdingHuData(data: string, url: string): IBirdingHuD
         observers: formTable.find('tr').eq(5).find('td').eq(1).text().trim().split(', '),
         uploader: formTable.find('tr').eq(6).find('td').eq(1).text().trim(),
         notes: formTable.find('tr').eq(7).find('td').eq(1).text()?.trim(),
-        // The coordinates are switched in the html, and there is a typo in the selector of the latitude.
+        // The coordinates are switched in the html, and there is a typo in the latitude cell's id tag.
         latitude: parseFloat(formTable.find('tr').eq(8).find('td').eq(1).find('#longitude').val() as string),
         longitude: parseFloat(formTable.find('tr').eq(8).find('td').eq(1).find('#lattitude').val() as string),
         imageLink: previewImageLink ? previewImageLink.replace('sma/sma_', '') : undefined,
     };
-}
+};

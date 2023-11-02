@@ -2,7 +2,7 @@ import { FlatList, StyleSheet, Text, View } from 'react-native';
 
 import { Observation } from './Observation';
 import { useFetchData } from '../../../hooks';
-import { COLORS, SPACING, TEXT_STYLES } from '../../../styles';
+import { CONTAINER_STYLES, SPACING, TEXT_STYLES } from '../../../styles';
 import { IObservationListProps } from '../../../types/interfaces';
 import { Loading } from '../../Atomic/Loading';
 
@@ -35,12 +35,7 @@ const styles = StyleSheet.create({
         padding: SPACING.MEDIUM,
     },
     errorContainer: {
-        width: '90%',
-        alignItems: 'center',
-        alignContent: 'center',
-        alignSelf: 'center',
-        backgroundColor: COLORS.BACKGROUND.ERROR,
-        borderRadius: SPACING.SMALL,
+        ...CONTAINER_STYLES.ERROR,
     },
     errorText: {
         ...TEXT_STYLES.ERROR,

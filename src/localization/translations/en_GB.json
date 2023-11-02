@@ -6,6 +6,7 @@
     "BUTTON_CLOSE_LABEL": "Close button",
     "BUTTON_IMAGE_LABEL": "Show image button",
     "BUTTON_SCREEN_ABOUT_LABEL": "About button",
+    "BUTTON_SCREEN_GALLERY_LABEL": "Gallery button",
     "BUTTON_SCREEN_HOME_LABEL": "Home button",
     "BUTTON_SCREEN_OBSERVATIONS_LABEL": "Observations button",
     "BUTTON_SCREEN_SETTINGS_LABEL": "Settings button",
@@ -18,6 +19,9 @@
     "COVER_IMAGE_DATE": "2018-03-30",
     "COVER_IMAGE_LOCATION": "Nal Sarovar, Gujarat, India",
 
+    "GALLERY_INDEX_IMAGE_DESCRIPTION": "Index image",
+    "GALLERY_IMAGE_DESCRIPTION": "Larger image",
+
     "ICON_IMAGE_NAME": "Icon Image",
     "ICON_IMAGE_DESCRIPTION": "Collared pratincole (Glareola pratincola) portrait",
     "ICON_IMAGE_AUTHOR": "Ludovic Hirlimann",
@@ -28,9 +32,10 @@
 
     "MESSAGE_ERROR_NETWORK": "Something went wrong. Check the internet connection or try again later!",
 
-    "OBSERVATION_IMAGE_DESCRIPTION": "Image created during observation: ",
+    "OBSERVATION_IMAGE_DESCRIPTION": "Image created during observation:",
 
     "SCREEN_ABOUT_TITLE": "About",
+    "SCREEN_GALLERY_TITLE": "Gallery",
     "SCREEN_OBSERVATIONS_TITLE": "Observations",
     "SCREEN_SETTINGS_TITLE": "Settings",
     "SCREEN_SETTINGS_DESCRIPTION": "Coming soon..."

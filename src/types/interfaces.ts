@@ -19,6 +19,26 @@ export interface IBirdingHuData {
     imageLink?: string;
 }
 
+export interface IBirdingHuGalleryElementBase {
+    id: string;
+    author: string;
+    source: string;
+    speciesHun?: string;
+    speciesSci?: string;
+    date: string;
+    locality?: string;
+    area?: string;
+    notes?: string;
+    smallImageLink: string;
+    detailsUrl: string;
+}
+
+export interface IBirdingHuGalleryElement extends IBirdingHuGalleryElementBase {
+    cameraType?: string;
+    cameraSettings?: string[];
+    imageLink: string;
+}
+
 export interface IScreen {
     title?: string;
     children: React.ReactNode;
@@ -32,11 +52,18 @@ export interface IGlareolaButton {
     accessibilityLabel: string;
 }
 
-export interface IObservationListData {
-    url: string;
+export interface IFetchInformation {
     isLoading: boolean;
     error: string;
+}
+
+export interface IObservationListData extends IFetchInformation {
+    url: string;
     data?: IBirdingHuData[];
+}
+
+export interface IGalleryListData extends IFetchInformation {
+    data?: IBirdingHuGalleryElement[];
 }
 
 export interface IObservationListProps {
@@ -46,12 +73,4 @@ export interface IObservationListProps {
 export interface IFontStyle {
     fontSize: number;
     fontWeight?: '300' | '500' | '700' | '900' | 'normal' | 'bold' | '100' | '200' | '400' | '600' | '800';
-}
-
-export interface ITextStyle extends IFontStyle {
-    color: string;
-    padding?: number;
-    margin?: number;
-    textAlign?: 'auto' | 'left' | 'right' | 'center' | 'justify';
-    textAlignVertical?: 'auto' | 'top' | 'bottom' | 'center';
 }

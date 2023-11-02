@@ -1,22 +1,22 @@
 import { useEffect, useState } from 'react';
 
 import i18n from '../localization';
-import { IBirdingHuData, IObservationListData } from '../types/interfaces';
+import { IBirdingHuGalleryElement, IGalleryListData } from '../types/interfaces';
 import BirdingHuExtractor from '../utils/crawler/birdingHu/birdingHuExtractor';
 
-export const useFetchData = (url: string) => {
-    const dataCrawler = new BirdingHuExtractor(url);
+export const useFetchGallery = (url: string) => {
+    const crawler = new BirdingHuExtractor(url);
 
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState('');
-    const [data, setData] = useState([] as IBirdingHuData[]);
+    const [data, setData] = useState([] as IBirdingHuGalleryElement[]);
 
     useEffect(() => {
         setIsLoading(true);
-        dataCrawler
-            .getData()
+        crawler
+            .getGallery()
             .then(response => {
-                setData(response as IBirdingHuData[]);
+                setData(response as IBirdingHuGalleryElement[]);
                 setIsLoading(false);
             })
             .catch(() => {
@@ -25,5 +25,5 @@ export const useFetchData = (url: string) => {
             });
     }, [url]);
 
-    return { isLoading, error, data } as IObservationListData;
+    return { isLoading, error, data } as IGalleryListData;
 };

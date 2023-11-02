@@ -5,7 +5,8 @@
 
     "BUTTON_CLOSE_LABEL": "Bezárás gomb",
     "BUTTON_IMAGE_LABEL": "Kép megjelenítése gomb",
-    "BUTTON_SCREEN_ABOUT_LABEL": "About gomb",
+    "BUTTON_SCREEN_ABOUT_LABEL": "Alkalmazás információ gomb",
+    "BUTTON_SCREEN_GALLERY_LABEL": "Galéria gomb",
     "BUTTON_SCREEN_HOME_LABEL": "Főképernyő gomb",
     "BUTTON_SCREEN_OBSERVATIONS_LABEL": "Megfigyelések gomb",
     "BUTTON_SCREEN_SETTINGS_LABEL": "Beállítások gomb",
@@ -18,19 +19,23 @@
     "COVER_IMAGE_DATE": "2018-03-30",
     "COVER_IMAGE_LOCATION": "Nal Sarovar, Gujarat, India",
 
+    "GALLERY_INDEX_IMAGE_DESCRIPTION": "Index kép",
+    "GALLERY_IMAGE_DESCRIPTION": "Nagyobb kép",
+
     "ICON_IMAGE_NAME": "Ikon kép",
     "ICON_IMAGE_DESCRIPTION": "Székicsér (Glareola pratincola) portré",
     "ICON_IMAGE_AUTHOR": "Ludovic Hirlimann",
     "ICON_IMAGE_DATE": "2010-05-16",
     "ICON_IMAGE_LOCATION": "Amboseli Nemzeti Park, Kenya",
 
-    "LOADING": "betöltés",
+    "LOADING": "Betöltés",
 
     "MESSAGE_ERROR_NETWORK": "Hiba történt! Ellenőrizd a hálózati kapcsolatot, vagy próbáld meg később!",
 
-    "OBSERVATION_IMAGE_DESCRIPTION": "A megfigyelés során készült kép: ",
+    "OBSERVATION_IMAGE_DESCRIPTION": "A megfigyelés során készült kép:",
 
     "SCREEN_ABOUT_TITLE": "Az alkalmazásról",
+    "SCREEN_GALLERY_TITLE": "Galéria",
     "SCREEN_OBSERVATIONS_TITLE": "Megfigyelések",
     "SCREEN_SETTINGS_TITLE": "Beállítások",
     "SCREEN_SETTINGS_DESCRIPTION": "Hamarosan"

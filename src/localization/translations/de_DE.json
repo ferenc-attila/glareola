@@ -6,6 +6,7 @@
     "BUTTON_CLOSE_LABEL": "Schaltfläche „Schließen“",
     "BUTTON_IMAGE_LABEL": "Schaltfläche „Bild anzeigen“",
     "BUTTON_SCREEN_ABOUT_LABEL": "Schaltfläche „Über“",
+    "BUTTON_SCREEN_GALLERY_LABEL": "Schaltfläche „Galerie“.",
     "BUTTON_SCREEN_HOME_LABEL": "Hauptbildschirm-Taste",
     "BUTTON_SCREEN_OBSERVATIONS_LABEL": "Schaltfläche „Beobachtungen“",
     "BUTTON_SCREEN_SETTINGS_LABEL": "Schaltfläche „Einstellungen“",
@@ -18,6 +19,9 @@
     "COVER_IMAGE_DATE": "2018-03-30",
     "COVER_IMAGE_LOCATION": "Nal Sarovar, Gujarat, Indien",
 
+    "GALLERY_INDEX_IMAGE_DESCRIPTION": "Indexbild",
+    "GALLERY_IMAGE_DESCRIPTION": "Größeres Bild",
+
     "ICON_IMAGE_NAME": "Symbolbild",
     "ICON_IMAGE_DESCRIPTION": "Porträt von Rotflügel-Brachschwalbe (Glareola pratincola)",
     "ICON_IMAGE_AUTHOR": "Ludovic Hirlimann",
@@ -28,9 +32,10 @@
 
     "MESSAGE_ERROR_NETWORK": "Etwas ist schief gelaufen. Überprüfen Sie die Internetverbindung oder versuchen Sie es später noch einmal!",
 
-    "OBSERVATION_IMAGE_DESCRIPTION": "Bild, das während der Beobachtung erstellt wurde: ",
+    "OBSERVATION_IMAGE_DESCRIPTION": "Bild, das während der Beobachtung erstellt wurde:",
 
     "SCREEN_ABOUT_TITLE": "Über die Bewerbung",
+    "SCREEN_GALLERY_TITLE": "Galerie",
     "SCREEN_OBSERVATIONS_TITLE": "Beobachtungen",
     "SCREEN_SETTINGS_TITLE": "Einstellungen",
     "SCREEN_SETTINGS_DESCRIPTION": "Demnächst"
