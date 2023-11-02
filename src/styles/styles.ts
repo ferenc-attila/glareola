@@ -1,4 +1,6 @@
-import { IFontStyle, ITextStyle } from '../types/interfaces';
+import { TextStyle, ViewStyle } from 'react-native';
+
+import { IFontStyle } from '../types/interfaces';
 
 export const SPACING = {
     SMALL: 5,
@@ -46,27 +48,53 @@ export const TEXT_STYLES = {
         textAlign: 'center',
         textAlignVertical: 'center',
         padding: SPACING.LARGE,
-    } as ITextStyle,
+    } as TextStyle,
     SECTION_TITLE: {
         ...FONT_SIZES.LARGE,
         color: COLORS.FONT.NORMAL,
         padding: SPACING.MEDIUM,
         textAlign: 'center',
         textAlignVertical: 'bottom',
-    } as ITextStyle,
+    } as TextStyle,
     COMMON: {
         ...FONT_SIZES.MEDIUM,
         color: COLORS.FONT.NORMAL,
-    } as ITextStyle,
+    } as TextStyle,
     SMALL: {
         ...FONT_SIZES.SMALL,
         color: COLORS.FONT.NORMAL,
-    } as ITextStyle,
+    } as TextStyle,
     ERROR: {
         ...FONT_SIZES.MEDIUM,
         color: COLORS.FONT.ERROR,
         padding: SPACING.MEDIUM,
         margin: SPACING.MEDIUM,
         textAlign: 'center',
-    } as ITextStyle,
+    } as TextStyle,
+};
+
+export const CONTAINER_STYLES = {
+    ERROR: {
+        width: '90%',
+        alignItems: 'center',
+        alignContent: 'center',
+        alignSelf: 'center',
+        backgroundColor: COLORS.BACKGROUND.ERROR,
+        borderRadius: SPACING.SMALL,
+    } as ViewStyle,
+    COMMON_CONTAINER: {
+        borderRadius: SPACING.MEDIUM,
+        backgroundColor: COLORS.BACKGROUND.DATA,
+        width: '90%',
+        alignContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center',
+        padding: SPACING.MEDIUM,
+        margin: SPACING.MEDIUM,
+    } as ViewStyle,
+    BUTTON_CONTAINER: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+    } as ViewStyle,
 };

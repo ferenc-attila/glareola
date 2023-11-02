@@ -5,6 +5,7 @@ import 'reflect-metadata';
 import { GlareolaButton } from './src/components/Atomic/GlareolaButton';
 import { Screen } from './src/components/Screen';
 import { About } from './src/components/Screen/About';
+import { GalleryList } from './src/components/Screen/GalleryList';
 import { Home } from './src/components/Screen/Home';
 import { ObservationList } from './src/components/Screen/ObservationList';
 import { Settings } from './src/components/Screen/Settings';
@@ -14,9 +15,10 @@ import { COLORS, SPACING } from './src/styles';
 
 export default function App() {
     const url = URLS.BIRDING_HU_MAIN;
+    const galleryUrl = URLS.BIRDING_HU_GALLERY;
     const [appScreen, setAppScreen] = useState('home');
 
-    function getScreen(appScreen: string) {
+    function setScreen(appScreen: string) {
         switch (appScreen) {
             case 'home': {
                 return (
@@ -39,6 +41,13 @@ export default function App() {
                     </Screen>
                 );
             }
+            case 'gallery': {
+                return (
+                    <Screen title={i18n.t('SCREEN_GALLERY_TITLE')}>
+                        <GalleryList url={galleryUrl} />
+                    </Screen>
+                );
+            }
             case 'settings': {
                 return (
                     <Screen title={i18n.t('SCREEN_SETTINGS_TITLE')}>
@@ -49,10 +58,11 @@ export default function App() {
         }
     }
 
+    // We should create a map of screens and their parameters, and use that to render the buttons.
     return (
         <>
             <StatusBar />
-            <View style={styles.mainContainer}>{getScreen(appScreen)}</View>
+            <View style={styles.mainContainer}>{setScreen(appScreen)}</View>
             <View style={styles.footerContainer}>
                 <View style={styles.buttonContainer}>
                     <GlareolaButton
@@ -66,6 +76,13 @@ export default function App() {
                         onPress={() => setAppScreen('observations')}
                         iconName={ICON_NAMES.OBSERVATIONS}
                         accessibilityLabel={i18n.t('BUTTON_SCREEN_OBSERVATIONS_LABEL')}
+                    />
+                </View>
+                <View style={styles.buttonContainer}>
+                    <GlareolaButton
+                        onPress={() => setAppScreen('gallery')}
+                        iconName={ICON_NAMES.GALLERY}
+                        accessibilityLabel={i18n.t('BUTTON_SCREEN_GALLERY_LABEL')}
                     />
                 </View>
                 <View style={styles.buttonContainer}>
@@ -91,7 +108,6 @@ const styles = StyleSheet.create({
     mainContainer: {
         flex: 6,
         backgroundColor: COLORS.BACKGROUND.MAIN,
-        // width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
         paddingBottom: SPACING.MEDIUM,
@@ -100,14 +116,12 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         backgroundColor: COLORS.BACKGROUND.FOOTER,
-        // width: '100%',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-evenly',
     },
     buttonContainer: {
         padding: SPACING.MEDIUM,
-        flexWrap: 'wrap',
-        justifyContent: 'space-around',
+        justifyContent: 'center',
         alignItems: 'center',
     },
 });

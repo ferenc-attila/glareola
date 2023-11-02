@@ -1,4 +1,4 @@
-export const htmlString: string = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+export const birdingHuDataHtmlStrings: string = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
@@ -169,3 +169,99 @@ export const htmlString: string = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 
 </div>
 </body>
 </html>`;
+
+export const birdingHuGalleryElementHtmlString = `<html>
+                <head>
+                    <meta http-equiv = 'Content-type' content = 'text/html; charset=iso-8859-2' / >
+                    <style> * {font-size: 12px; font - family: Arial; } </style>
+                    <link href = 'http://birding.hu/style/default/kozos.css' rel = 'stylesheet' type = 'text/css' media = 'all' >
+                    <script type = 'text/javascript' src = 'http://birding.hu/js/jquery-1.4.2.min.js'></script>
+                </head>
+                <body>
+                    <center><img
+                                src = '../src/assets/images/glareola_icon.png'
+                                style = 'padding-bottom:10px
+                                border:0'
+                                id = 'kepnagy' />
+                    </center>
+                    <table
+                        border = '0'
+                        width = '100%'
+                        cellspadding = '0'
+                        cellpadding = '0'
+                    >
+                        <tr>
+                            <td width = '50%'>Székicsér<i>Glareola pratincola<i></td>
+                            <td width = '50%' align = 'right'>Canon EOS 5D Mark IV</td>
+                        </tr>
+                        <tr>
+                            <td> & copy;
+                                <a class = 'Bordo'
+                                onClick = 'if(parent.frames.length>0) {parent.tb_remove(); parent.location.href='http://birding.hu/useradatlap/1'}
+                                            else document.location.href='http://birding.hu/useradatlap/1' 'href = 'javascript:void(0)'
+                                >John Doe</a>
+                            </td>
+                            <td align = 'right'>f/5.6, 1/1000, ISO 400</td>
+                        </tr>
+                        <tr>
+                        <td colspan = '2' align = 'center'>
+                            Ezt a képet eddig
+                            <span
+                                class = 'kepMegtekintesek'
+                                style = 'font-weight:bold;'>
+                                118
+                            </span>
+                            látogató tekintette meg
+                            <br>
+                            <a
+                                class = 'Bordo'
+                                href = '../src/assets/images/glareola_pratincola.png'
+                                target = '_blank'
+                            >
+                                eredeti méret
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </body>
+        </html>`;
+
+export const birdingHuGalleryBaseHtmlString = `<form class="niceform" name="kepekMegnez" id="Kepek" method="POST" action="http://birding.hu/megfigyeles/adatlap/">
+					<div class="Kep" style="height: 300px;"><a class="thickbox" href=${birdingHuGalleryElementHtmlString}><img valign="middle" src="http://birding.hu/images/galeria/123455678"></a></div>
+					<div style="float:left">
+						<div class="Madar" style="float:none">
+							<span class="Bordo" id="size_12"><b><a href="javascript:loginAlert()" class="Bordo">Székicsér</a></b></span>
+
+							<br>
+							<span><i>Glareola pratincola</i></span>
+						</div>
+
+						<div class="Szoveg" style="float:none">Budapest, Parlament<br>2021-05-01<br>Some comment</div>
+
+						<div style="float:none">
+							<div class="Db"><span>76</span> megtekintés</div>
+							<div class="Btn">
+									<input type="hidden" name="faj_id" value="1">
+																		<!--<input type="submit" name="submit" style="width:80px;" value="Képek &raquo;" />-->
+																</div>
+							<div class="torol"></div>
+						</div>
+
+
+						<div class="CopyNev" style="float:none">© <a class="Bordo" href="http://birding.hu/useradatlap/1">John Doe</a></div>
+
+						<div class="CopyNev" style="float:none">
+
+							<a href="http://birding.hu/kepertekeles/12345678" class="Bordo">Értékelés:</a> 4.8/5
+
+						 <a href="http://birding.hu/kepertekeles/12345678" class="Bordo">Kommentek száma:</a> 1
+
+						</div>
+						<div class="torol"></div>
+						<script type="text/javascript">
+							function loginAlert()
+							{
+								alert('A tartalom megtekintéséhez be kell jelentkezni!');
+							}
+						</script>
+					</div></form>`;

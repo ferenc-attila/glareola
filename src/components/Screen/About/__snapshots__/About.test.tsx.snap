@@ -48,7 +48,7 @@ exports[`About should render correctly 1`] = `
         }
       }
     >
-      0.0.8
+      0.0.9
     </Text>
     <Text
       style={
@@ -59,7 +59,7 @@ exports[`About should render correctly 1`] = `
         }
       }
     >
-      2023-10-10
+      2023-11-02
     </Text>
     <Text
       style={

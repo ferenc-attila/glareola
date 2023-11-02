@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Modal, Image, Linking, Platform } from 'react-n
 
 import { ICON_NAMES } from '../../../../constants';
 import i18n from '../../../../localization';
-import { COLORS, SPACING, TEXT_STYLES } from '../../../../styles';
+import { COLORS, CONTAINER_STYLES, SPACING, TEXT_STYLES } from '../../../../styles';
 import { IBirdingHuData } from '../../../../types/interfaces';
 import { GlareolaButton } from '../../../Atomic/GlareolaButton';
 
@@ -102,19 +102,10 @@ export const Observation = (observationData: IBirdingHuData) => {
 
 const styles = StyleSheet.create({
     observationContainer: {
-        borderRadius: SPACING.MEDIUM,
-        backgroundColor: COLORS.BACKGROUND.DATA,
-        width: '90%',
-        alignContent: 'center',
-        alignItems: 'center',
-        alignSelf: 'center',
-        padding: SPACING.MEDIUM,
-        margin: SPACING.MEDIUM,
+        ...CONTAINER_STYLES.COMMON_CONTAINER,
     },
     observationButtonContainer: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        alignItems: 'center',
+        ...CONTAINER_STYLES.BUTTON_CONTAINER,
     },
     modal: {
         backgroundColor: COLORS.BACKGROUND.DATA,

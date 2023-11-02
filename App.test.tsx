@@ -31,6 +31,14 @@ describe('App', () => {
             expect(container.getByText('Observations')).toBeTruthy();
         });
 
+        test.skip('loading the Gallery screen when observations button pressed', async () => {
+            // TODO: Refactor the code so that the url could come from settings, or .env file. We need state management to do this.
+            const container = render(<App />);
+            const observationsButton = container.getByLabelText('Gallery button');
+            await waitFor(() => fireEvent.press(observationsButton), { timeout: 3000 });
+            expect(container.getByText('Gallery')).toBeTruthy();
+        });
+
         test('loading the Settings screen when setting button pressed', async () => {
             const container = render(<App />);
             const settingsButton = container.getByLabelText('Settings button');
