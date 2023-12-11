@@ -70,7 +70,7 @@
     "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-native": "^12.3.2",
     "@types/jest": "^29.5.7",
-    "@types/react": "^18.2.34",
+    "@types/react": "^18.2.43",
     "@types/react-test-renderer": "^18.0.5",
     "babel-preset-expo": "^9.5.2",
     "eslint": "^8.52.0",
