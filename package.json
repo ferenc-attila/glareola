@@ -55,7 +55,7 @@
     "expo-asset": "~8.10.1",
     "expo-build-properties": "~0.8.3",
     "expo-localization": "~14.3.0",
-    "expo-splash-screen": "~0.20.5",
+    "expo-splash-screen": "~0.26.3",
     "expo-sqlite": "~11.3.3",
     "expo-status-bar": "~1.6.0",
     "expo-system-ui": "~2.4.0",
